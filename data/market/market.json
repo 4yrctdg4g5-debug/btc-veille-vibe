@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshot_at": "2026-11-22T18:51:12+01:00",
+  "snapshot_at": "2026-11-22T19:01:18+01:00",
   "version": "vibe-market/1.0",
   "collector": "mac-launchd, 10 min",
   "errors": [],
@@ -17,29 +17,21 @@
   }
  },
  "price": {
-  "binance": 60813.8,
-  "hyperliquid": 60807.0,
-  "hl_vs_binance_pct": -0.011,
-  "chg_24h_pct": 1.38,
-  "chg_7d_pct": -6.008,
+  "binance": 60800.0,
+  "hyperliquid": 60791.7,
+  "hl_vs_binance_pct": -0.014,
+  "chg_24h_pct": 1.24,
+  "chg_7d_pct": -6.34,
   "hi_24h": 61647.9,
   "lo_24h": 58746.1,
-  "premium_index_pct": -0.044
+  "premium_index_pct": -0.034
  },
  "volume": {
-  "vol_usdt_24h": 11407450175.0,
-  "rvol_hour_current": -99.447,
-  "vol_usdt_heure_en_cours": 2867261.0,
-  "cvd_24h_btc": 3959.925,
+  "vol_usdt_24h": 11412974405.0,
+  "rvol_hour_current": -91.363,
+  "vol_usdt_heure_en_cours": 3461883.0,
+  "cvd_24h_btc": 3615.294,
   "candles_24h": [
-   {
-    "t": "2026-11-21T19:00:00+01:00",
-    "close": 60131.5,
-    "vol_usdt": 140174856.0,
-    "vol_ratio_btc": 2331.1,
-    "delta_btc": 102.42,
-    "rvol_hour": -64.852
-   },
    {
     "t": "2026-11-21T20:00:00+01:00",
     "close": 60324.7,
@@ -215,6 +207,14 @@
     "vol_ratio_btc": 5.4,
     "delta_btc": 0.892,
     "rvol_hour": -99.965
+   },
+   {
+    "t": "2026-11-22T18:00:00+01:00",
+    "close": 61190.1,
+    "vol_usdt": 2867261.0,
+    "vol_ratio_btc": 46.9,
+    "delta_btc": -19.822,
+    "rvol_hour": -99.528
    }
   ]
  },
@@ -226,10 +226,10 @@
    "4h": 0.024,
    "24h": 1.909
   },
-  "hyperliquid_oi_btc": 40641.0,
+  "hyperliquid_oi_btc": 40672.0,
   "funding_binance_8h_pct": -0.00099,
   "funding_binance_avg_last32h_pct": 0.00068,
-  "funding_hyperliquid_hourly_pct": -0.00051,
+  "funding_hyperliquid_hourly_pct": -0.00027,
   "ls_top_positions": 1.7829,
   "ls_top_accounts": 2.4783,
   "ls_global_accounts": 2.1867,
@@ -238,7 +238,7 @@
  "sentiment": {
   "fear_greed": 11,
   "fear_greed_veille": 12,
-  "dominance_btc_pct": 58.891
+  "dominance_btc_pct": 58.778
  },
  "mining": {
   "difficulty": 134823837323272,
