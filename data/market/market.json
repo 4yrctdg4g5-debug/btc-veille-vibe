@@ -1,0 +1,251 @@
+{
+ "meta": {
+  "snapshot_at": "2026-11-22T13:58:34+01:00",
+  "version": "vibe-market/1.0",
+  "collector": "mac-launchd, 10 min",
+  "errors": [],
+  "conventions": {
+   "prix": "BTCUSDT (Binance USDT-M), USD arrondis",
+   "rvol_hour": "_vol de la bougie horaire / moyenne des 20 dernières bougies à la même heure de Paris, en % (100 = normal)",
+   "rvol_hour_current": "proratisé sur la fraction écoulée de l'heure en cours",
+   "delta_btc": "2 x taker buy base - volume : flux agressif net acheteur en BTC (positif = achats dominants)",
+   "oi": "open interest Binance en BTC",
+   "funding": "Binance = taux par période de 8 h en % ; Hyperliquid = taux horaire en % (annualisé = x 24 x 365)",
+   "ls": "ratios long/short Binance : top_pos = positions des top traders, top_acc = comptes des top traders, glob_acc = tous les comptes",
+   "fg": "Fear & Greed alternative.me (0-100)",
+   "timezone": "Europe/Paris"
+  }
+ },
+ "price": {
+  "binance": 60796.5,
+  "hyperliquid": 60804.0,
+  "hl_vs_binance_pct": 0.012,
+  "chg_24h_pct": 3.34,
+  "chg_7d_pct": -7.048,
+  "hi_24h": 61647.9,
+  "lo_24h": 58746.1,
+  "premium_index_pct": -0.046
+ },
+ "volume": {
+  "vol_usdt_24h": 15368375762.0,
+  "rvol_hour_current": 172.743,
+  "vol_usdt_heure_en_cours": 1283466983.0,
+  "cvd_24h_btc": 6215.647,
+  "candles_24h": [
+   {
+    "t": "2026-11-21T14:00:00+01:00",
+    "close": 60522.0,
+    "vol_usdt": 2484524837.0,
+    "vol_ratio_btc": 41051.6,
+    "delta_btc": 751.655,
+    "rvol_hour": 278.308
+   },
+   {
+    "t": "2026-11-21T15:00:00+01:00",
+    "close": 60313.6,
+    "vol_usdt": 1409605045.0,
+    "vol_ratio_btc": 23371.3,
+    "delta_btc": -3336.609,
+    "rvol_hour": 29.37
+   },
+   {
+    "t": "2026-11-21T16:00:00+01:00",
+    "close": 59910.4,
+    "vol_usdt": 1206525738.0,
+    "vol_ratio_btc": 20138.8,
+    "delta_btc": 2104.217,
+    "rvol_hour": -27.061
+   },
+   {
+    "t": "2026-11-21T17:00:00+01:00",
+    "close": 60032.6,
+    "vol_usdt": 413016135.0,
+    "vol_ratio_btc": 6879.9,
+    "delta_btc": 945.876,
+    "rvol_hour": -55.57
+   },
+   {
+    "t": "2026-11-21T18:00:00+01:00",
+    "close": 60049.9,
+    "vol_usdt": 342968443.0,
+    "vol_ratio_btc": 5711.4,
+    "delta_btc": 324.809,
+    "rvol_hour": -42.284
+   },
+   {
+    "t": "2026-11-21T19:00:00+01:00",
+    "close": 60131.5,
+    "vol_usdt": 140174856.0,
+    "vol_ratio_btc": 2331.1,
+    "delta_btc": 102.42,
+    "rvol_hour": -64.852
+   },
+   {
+    "t": "2026-11-21T20:00:00+01:00",
+    "close": 60324.7,
+    "vol_usdt": 291918020.0,
+    "vol_ratio_btc": 4839.1,
+    "delta_btc": 221.903,
+    "rvol_hour": -27.127
+   },
+   {
+    "t": "2026-11-21T21:00:00+01:00",
+    "close": 60423.2,
+    "vol_usdt": 128725884.0,
+    "vol_ratio_btc": 2130.4,
+    "delta_btc": 84.489,
+    "rvol_hour": -68.169
+   },
+   {
+    "t": "2026-11-21T22:00:00+01:00",
+    "close": 60448.2,
+    "vol_usdt": 167386096.0,
+    "vol_ratio_btc": 2769.1,
+    "delta_btc": 78.24,
+    "rvol_hour": -66.726
+   },
+   {
+    "t": "2026-11-21T23:00:00+01:00",
+    "close": 60127.1,
+    "vol_usdt": 168308793.0,
+    "vol_ratio_btc": 2799.2,
+    "delta_btc": -550.066,
+    "rvol_hour": -62.785
+   },
+   {
+    "t": "2026-11-22T00:00:00+01:00",
+    "close": 60191.0,
+    "vol_usdt": 201150085.0,
+    "vol_ratio_btc": 3341.9,
+    "delta_btc": -494.714,
+    "rvol_hour": -60.147
+   },
+   {
+    "t": "2026-11-22T01:00:00+01:00",
+    "close": 60180.4,
+    "vol_usdt": 183372909.0,
+    "vol_ratio_btc": 3047.1,
+    "delta_btc": -124.297,
+    "rvol_hour": -57.704
+   },
+   {
+    "t": "2026-11-22T02:00:00+01:00",
+    "close": 60088.4,
+    "vol_usdt": 204299856.0,
+    "vol_ratio_btc": 3400.0,
+    "delta_btc": 140.15,
+    "rvol_hour": -60.438
+   },
+   {
+    "t": "2026-11-22T03:00:00+01:00",
+    "close": 59475.0,
+    "vol_usdt": 725069969.0,
+    "vol_ratio_btc": 12191.2,
+    "delta_btc": -1041.319,
+    "rvol_hour": 21.576
+   },
+   {
+    "t": "2026-11-22T04:00:00+01:00",
+    "close": 59335.8,
+    "vol_usdt": 490759706.0,
+    "vol_ratio_btc": 8270.9,
+    "delta_btc": -308.382,
+    "rvol_hour": -33.026
+   },
+   {
+    "t": "2026-11-22T05:00:00+01:00",
+    "close": 59290.3,
+    "vol_usdt": 377185693.0,
+    "vol_ratio_btc": 6361.7,
+    "delta_btc": 524.85,
+    "rvol_hour": -25.302
+   },
+   {
+    "t": "2026-11-22T06:00:00+01:00",
+    "close": 58900.4,
+    "vol_usdt": 599250383.0,
+    "vol_ratio_btc": 10174.0,
+    "delta_btc": 366.22,
+    "rvol_hour": 33.192
+   },
+   {
+    "t": "2026-11-22T07:00:00+01:00",
+    "close": 59129.1,
+    "vol_usdt": 364893751.0,
+    "vol_ratio_btc": 6171.1,
+    "delta_btc": 1305.047,
+    "rvol_hour": -24.573
+   },
+   {
+    "t": "2026-11-22T08:00:00+01:00",
+    "close": 59145.1,
+    "vol_usdt": 243959250.0,
+    "vol_ratio_btc": 4124.8,
+    "delta_btc": 193.902,
+    "rvol_hour": -48.429
+   },
+   {
+    "t": "2026-11-22T09:00:00+01:00",
+    "close": 59775.2,
+    "vol_usdt": 1506065854.0,
+    "vol_ratio_btc": 25195.5,
+    "delta_btc": 1838.034,
+    "rvol_hour": 280.104
+   },
+   {
+    "t": "2026-11-22T10:00:00+01:00",
+    "close": 61099.9,
+    "vol_usdt": 1304508897.0,
+    "vol_ratio_btc": 21350.4,
+    "delta_btc": 1301.654,
+    "rvol_hour": 220.446
+   },
+   {
+    "t": "2026-11-22T11:00:00+01:00",
+    "close": 60845.0,
+    "vol_usdt": 814887769.0,
+    "vol_ratio_btc": 13392.8,
+    "delta_btc": -249.894,
+    "rvol_hour": 180.15
+   },
+   {
+    "t": "2026-11-22T12:00:00+01:00",
+    "close": 61036.1,
+    "vol_usdt": 305728770.0,
+    "vol_ratio_btc": 5009.0,
+    "delta_btc": 378.557,
+    "rvol_hour": -8.756
+   }
+  ]
+ },
+ "derivatives": {
+  "oi_btc": 94697.5,
+  "oi_usd": 5779976770.0,
+  "oi_chg_pct": {
+   "1h": 0.516,
+   "4h": 1.918,
+   "24h": 0.885
+  },
+  "hyperliquid_oi_btc": 39614.0,
+  "funding_binance_8h_pct": 0.00548,
+  "funding_binance_avg_last32h_pct": 0.00141,
+  "funding_hyperliquid_hourly_pct": 0.00125,
+  "ls_top_positions": 1.7829,
+  "ls_top_accounts": 2.4783,
+  "ls_global_accounts": 2.1867,
+  "ls_top_positions_veille": 1.6756
+ },
+ "sentiment": {
+  "fear_greed": 11,
+  "fear_greed_veille": 12,
+  "dominance_btc_pct": 58.805
+ },
+ "mining": {
+  "difficulty": 134823837323272,
+  "hashrate_ehs": 1044.1,
+  "hashrate_sma7_ehs": 1057.7,
+  "hashrate_sma30_ehs": 1014.7,
+  "retarget_change_pct": 9.542,
+  "retarget_est_date": "2026-11-27T01:00:40+01:00"
+ }
+}
