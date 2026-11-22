@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+data/market/cache/
+data/market/market.log
+data/market/launchd.log
+data/market/.lock
