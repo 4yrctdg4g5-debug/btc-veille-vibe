@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshot_at": "2026-11-22T22:43:16+01:00",
+  "snapshot_at": "2026-11-22T22:53:20+01:00",
   "version": "vibe-market/1.0",
   "collector": "mac-launchd, 10 min",
   "errors": [],
@@ -17,18 +17,18 @@
   }
  },
  "price": {
-  "binance": 60978.4,
-  "hyperliquid": 60976.0,
-  "hl_vs_binance_pct": -0.004,
-  "chg_24h_pct": 1.01,
-  "chg_7d_pct": -6.464,
+  "binance": 60937.5,
+  "hyperliquid": 60936.0,
+  "hl_vs_binance_pct": -0.002,
+  "chg_24h_pct": 0.83,
+  "chg_7d_pct": -6.526,
   "hi_24h": 61647.9,
   "lo_24h": 58746.1,
-  "premium_index_pct": -0.073
+  "premium_index_pct": -0.06
  },
  "volume": {
-  "vol_usdt_24h": 11562249390.0,
-  "rvol_hour_current": -97.843,
+  "vol_usdt_24h": 11563813243.0,
+  "rvol_hour_current": -98.251,
   "vol_usdt_heure_en_cours": 7901409.0,
   "cvd_24h_btc": 3229.669,
   "candles_24h": [
@@ -226,7 +226,7 @@
    "4h": -0.686,
    "24h": 1.502
   },
-  "hyperliquid_oi_btc": 38164.0,
+  "hyperliquid_oi_btc": 38178.0,
   "funding_binance_8h_pct": -0.00099,
   "funding_binance_avg_last32h_pct": 0.00068,
   "funding_hyperliquid_hourly_pct": 0.00125,
