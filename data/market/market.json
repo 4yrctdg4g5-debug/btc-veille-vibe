@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshot_at": "2026-11-22T15:59:41+01:00",
+  "snapshot_at": "2026-11-22T16:09:45+01:00",
   "version": "vibe-market/1.0",
   "collector": "mac-launchd, 10 min",
   "errors": [],
@@ -17,29 +17,21 @@
   }
  },
  "price": {
-  "binance": 60905.0,
-  "hyperliquid": 60902.0,
-  "hl_vs_binance_pct": -0.005,
-  "chg_24h_pct": 1.0,
-  "chg_7d_pct": -5.894,
+  "binance": 60911.2,
+  "hyperliquid": 60909.0,
+  "hl_vs_binance_pct": -0.004,
+  "chg_24h_pct": 1.03,
+  "chg_7d_pct": -5.818,
   "hi_24h": 61647.9,
   "lo_24h": 58746.1,
-  "premium_index_pct": -0.076
+  "premium_index_pct": -0.068
  },
  "volume": {
-  "vol_usdt_24h": 12223210413.0,
-  "rvol_hour_current": -94.985,
-  "vol_usdt_heure_en_cours": 57200817.0,
-  "cvd_24h_btc": 3250.307,
+  "vol_usdt_24h": 12182813592.0,
+  "rvol_hour_current": -81.51,
+  "vol_usdt_heure_en_cours": 51333876.0,
+  "cvd_24h_btc": 6927.492,
   "candles_24h": [
-   {
-    "t": "2026-11-21T16:00:00+01:00",
-    "close": 59910.4,
-    "vol_usdt": 1206525738.0,
-    "vol_ratio_btc": 20138.8,
-    "delta_btc": 2104.217,
-    "rvol_hour": -27.061
-   },
    {
     "t": "2026-11-21T17:00:00+01:00",
     "close": 60032.6,
@@ -215,21 +207,29 @@
     "vol_ratio_btc": 1152.2,
     "delta_btc": -322.124,
     "rvol_hour": -90.958
+   },
+   {
+    "t": "2026-11-22T15:00:00+01:00",
+    "close": 60783.9,
+    "vol_usdt": 57200817.0,
+    "vol_ratio_btc": 941.1,
+    "delta_btc": 340.576,
+    "rvol_hour": -95.011
    }
   ]
  },
  "derivatives": {
-  "oi_btc": 94209.8,
-  "oi_usd": 5719853736.0,
+  "oi_btc": 94008.6,
+  "oi_usd": 5725130096.0,
   "oi_chg_pct": {
-   "1h": 0.05,
-   "4h": 0.034,
-   "24h": 0.838
+   "1h": -0.214,
+   "4h": -0.215,
+   "24h": 0.528
   },
-  "hyperliquid_oi_btc": 39351.0,
+  "hyperliquid_oi_btc": 39374.0,
   "funding_binance_8h_pct": 0.00548,
   "funding_binance_avg_last32h_pct": 0.00141,
-  "funding_hyperliquid_hourly_pct": -0.00014,
+  "funding_hyperliquid_hourly_pct": 0.00035,
   "ls_top_positions": 1.7829,
   "ls_top_accounts": 2.4783,
   "ls_global_accounts": 2.1867,
