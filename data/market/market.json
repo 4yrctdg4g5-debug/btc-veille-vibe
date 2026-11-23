@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshot_at": "2026-11-23T02:55:31+01:00",
+  "snapshot_at": "2026-11-23T03:05:37+01:00",
   "version": "vibe-market/1.0",
   "collector": "mac-launchd, 10 min",
   "errors": [],
@@ -17,29 +17,21 @@
   }
  },
  "price": {
-  "binance": 60830.1,
-  "hyperliquid": 60833.7,
-  "hl_vs_binance_pct": 0.006,
+  "binance": 60821.3,
+  "hyperliquid": 60830.0,
+  "hl_vs_binance_pct": 0.014,
   "chg_24h_pct": 1.16,
-  "chg_7d_pct": -6.635,
+  "chg_7d_pct": -6.542,
   "hi_24h": 61647.9,
   "lo_24h": 58746.1,
-  "premium_index_pct": -0.05
+  "premium_index_pct": -0.042
  },
  "volume": {
-  "vol_usdt_24h": 12474887124.0,
-  "rvol_hour_current": -89.898,
-  "vol_usdt_heure_en_cours": 47394452.0,
-  "cvd_24h_btc": 4151.616,
+  "vol_usdt_24h": 12504857008.0,
+  "rvol_hour_current": -65.77,
+  "vol_usdt_heure_en_cours": 21380910.0,
+  "cvd_24h_btc": 3980.839,
   "candles_24h": [
-   {
-    "t": "2026-11-22T03:00:00+01:00",
-    "close": 59475.0,
-    "vol_usdt": 725069969.0,
-    "vol_ratio_btc": 12191.2,
-    "delta_btc": -1041.319,
-    "rvol_hour": 21.576
-   },
    {
     "t": "2026-11-22T04:00:00+01:00",
     "close": 59335.8,
@@ -215,21 +207,29 @@
     "vol_ratio_btc": 736.3,
     "delta_btc": -201.332,
     "rvol_hour": -89.387
+   },
+   {
+    "t": "2026-11-23T02:00:00+01:00",
+    "close": 61015.6,
+    "vol_usdt": 47394452.0,
+    "vol_ratio_btc": 776.8,
+    "delta_btc": -30.627,
+    "rvol_hour": -90.651
    }
   ]
  },
  "derivatives": {
-  "oi_btc": 93113.0,
-  "oi_usd": 5709301507.0,
+  "oi_btc": 92994.8,
+  "oi_usd": 5657986884.0,
   "oi_chg_pct": {
-   "1h": -0.035,
-   "4h": -0.456,
-   "24h": 1.563
+   "1h": -0.127,
+   "4h": -0.117,
+   "24h": 1.614
   },
-  "hyperliquid_oi_btc": 38319.0,
+  "hyperliquid_oi_btc": 38281.0,
   "funding_binance_8h_pct": 0.00207,
   "funding_binance_avg_last32h_pct": 0.00097,
-  "funding_hyperliquid_hourly_pct": 0.00087,
+  "funding_hyperliquid_hourly_pct": 0.00125,
   "ls_top_positions": 1.6768,
   "ls_top_accounts": 2.4037,
   "ls_global_accounts": 2.1008,
@@ -238,7 +238,7 @@
  "sentiment": {
   "fear_greed": 11,
   "fear_greed_veille": 11,
-  "dominance_btc_pct": 58.909
+  "dominance_btc_pct": 58.842
  },
  "mining": {
   "difficulty": 134823837323272,
