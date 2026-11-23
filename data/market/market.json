@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshot_at": "2026-11-23T07:27:54+01:00",
+  "snapshot_at": "2026-11-23T07:37:59+01:00",
   "version": "vibe-market/1.0",
   "collector": "mac-launchd, 10 min",
   "errors": [],
@@ -17,18 +17,18 @@
   }
  },
  "price": {
-  "binance": 61533.2,
-  "hyperliquid": 61534.0,
-  "hl_vs_binance_pct": 0.001,
-  "chg_24h_pct": 4.33,
-  "chg_7d_pct": -5.267,
+  "binance": 61435.7,
+  "hyperliquid": 61434.0,
+  "hl_vs_binance_pct": -0.003,
+  "chg_24h_pct": 3.89,
+  "chg_7d_pct": -5.417,
   "hi_24h": 61945.5,
-  "lo_24h": 58956.5,
-  "premium_index_pct": -0.057
+  "lo_24h": 58991.4,
+  "premium_index_pct": -0.033
  },
  "volume": {
-  "vol_usdt_24h": 13289389176.0,
-  "rvol_hour_current": -77.323,
+  "vol_usdt_24h": 13326165447.0,
+  "rvol_hour_current": -83.34,
   "vol_usdt_heure_en_cours": 51878721.0,
   "cvd_24h_btc": 4842.89,
   "candles_24h": [
