@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshot_at": "2026-11-23T10:59:49+01:00",
+  "snapshot_at": "2026-11-23T11:09:54+01:00",
   "version": "vibe-market/1.0",
   "collector": "mac-launchd, 10 min",
   "errors": [],
@@ -17,29 +17,21 @@
   }
  },
  "price": {
-  "binance": 61397.7,
-  "hyperliquid": 61408.0,
-  "hl_vs_binance_pct": 0.017,
-  "chg_24h_pct": 0.22,
-  "chg_7d_pct": -4.872,
+  "binance": 61362.2,
+  "hyperliquid": 61370.0,
+  "hl_vs_binance_pct": 0.013,
+  "chg_24h_pct": 0.3,
+  "chg_7d_pct": -4.738,
   "hi_24h": 61945.5,
   "lo_24h": 60351.2,
-  "premium_index_pct": -0.042
+  "premium_index_pct": -0.034
  },
  "volume": {
-  "vol_usdt_24h": 11470047730.0,
-  "rvol_hour_current": -89.755,
-  "vol_usdt_heure_en_cours": 47284083.0,
-  "cvd_24h_btc": 1593.752,
+  "vol_usdt_24h": 11182001337.0,
+  "rvol_hour_current": 2.513,
+  "vol_usdt_heure_en_cours": 54865888.0,
+  "cvd_24h_btc": 349.649,
   "candles_24h": [
-   {
-    "t": "2026-11-22T11:00:00+01:00",
-    "close": 60845.0,
-    "vol_usdt": 814887769.0,
-    "vol_ratio_btc": 13392.8,
-    "delta_btc": -249.894,
-    "rvol_hour": 180.15
-   },
    {
     "t": "2026-11-22T12:00:00+01:00",
     "close": 61036.1,
@@ -215,18 +207,26 @@
     "vol_ratio_btc": 664.3,
     "delta_btc": -5.662,
     "rvol_hour": -91.112
+   },
+   {
+    "t": "2026-11-23T10:00:00+01:00",
+    "close": 61581.8,
+    "vol_usdt": 47284083.0,
+    "vol_ratio_btc": 767.8,
+    "delta_btc": 57.551,
+    "rvol_hour": -89.786
    }
   ]
  },
  "derivatives": {
-  "oi_btc": 92205.4,
-  "oi_usd": 5669524528.0,
+  "oi_btc": 92416.3,
+  "oi_usd": 5675536342.0,
   "oi_chg_pct": {
-   "1h": -0.162,
-   "4h": 0.85,
-   "24h": -0.935
+   "1h": 0.229,
+   "4h": 0.293,
+   "24h": -1.87
   },
-  "hyperliquid_oi_btc": 37877.0,
+  "hyperliquid_oi_btc": 37913.0,
   "funding_binance_8h_pct": 0.00357,
   "funding_binance_avg_last32h_pct": 0.00253,
   "funding_hyperliquid_hourly_pct": 0.00125,
@@ -238,7 +238,7 @@
  "sentiment": {
   "fear_greed": 11,
   "fear_greed_veille": 11,
-  "dominance_btc_pct": 58.893
+  "dominance_btc_pct": 58.866
  },
  "mining": {
   "difficulty": 134823837323272,
