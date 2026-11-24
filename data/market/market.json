@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshot_at": "2026-11-24T22:07:46+01:00",
+  "snapshot_at": "2026-11-24T22:17:59+01:00",
   "version": "vibe-market/1.1",
   "collector": "mac-launchd, 10 min",
   "errors": [],
@@ -18,18 +18,18 @@
   }
  },
  "price": {
-  "binance": 59744.8,
-  "hyperliquid": 59736.0,
-  "hl_vs_binance_pct": -0.015,
-  "chg_24h_pct": -2.5,
-  "chg_7d_pct": -7.664,
+  "binance": 59817.9,
+  "hyperliquid": 59843.0,
+  "hl_vs_binance_pct": 0.042,
+  "chg_24h_pct": -2.37,
+  "chg_7d_pct": -7.551,
   "hi_24h": 61663.1,
   "lo_24h": 59251.0,
-  "premium_index_pct": -0.04
+  "premium_index_pct": -0.03
  },
  "volume": {
-  "vol_usdt_24h": 14372229621.0,
-  "rvol_hour_current": -58.572,
+  "vol_usdt_24h": 14350626949.0,
+  "rvol_hour_current": -82.111,
   "vol_usdt_heure_en_cours": 26122981.0,
   "cvd_24h_btc": -853.06,
   "candles_24h": [
@@ -227,10 +227,10 @@
    "4h": -1.032,
    "24h": 4.024
   },
-  "hyperliquid_oi_btc": 36353.0,
+  "hyperliquid_oi_btc": 36298.0,
   "funding_binance_8h_pct": 0.00223,
   "funding_binance_avg_last32h_pct": 0.00381,
-  "funding_hyperliquid_hourly_pct": -0.00106,
+  "funding_hyperliquid_hourly_pct": -0.00095,
   "ls_top_positions": 1.5675,
   "ls_top_accounts": 3.158,
   "ls_global_accounts": 2.7679,
@@ -250,25 +250,25 @@
   "retarget_est_date": "2026-11-27T02:59:45+01:00"
  },
  "us": {
-  "as_of": "2026-11-24T22:07:46+01:00",
+  "as_of": "2026-11-24T22:17:59+01:00",
   "source": "yahoo",
   "es_futures": {
    "symbol": "ES=F",
    "name": "E-Mini S&P 500 Dec 26",
-   "price": 7218.0,
+   "price": 7210.75,
    "prev_close": 7254.5,
-   "chg_pct": -0.503,
-   "quote_time": "2026-11-24T21:57:37+01:00",
+   "chg_pct": -0.603,
+   "quote_time": "2026-11-24T22:07:48+01:00",
    "live": true,
    "source": "yahoo"
   },
   "nq_futures": {
    "symbol": "NQ=F",
    "name": "Nasdaq 100 Dec 26",
-   "price": 26283.5,
+   "price": 26240.0,
    "prev_close": 26808.0,
-   "chg_pct": -1.957,
-   "quote_time": "2026-11-24T21:57:37+01:00",
+   "chg_pct": -2.119,
+   "quote_time": "2026-11-24T22:07:50+01:00",
    "live": true,
    "source": "yahoo"
   },
@@ -305,9 +305,9 @@
   "mu": {
    "symbol": "MU",
    "name": "Micron Technology, Inc.",
-   "price": 630.07,
+   "price": 629.79,
    "prev_close": 707.7,
-   "chg_pct": -10.969,
+   "chg_pct": -11.009,
    "quote_time": "2026-11-24T22:00:01+01:00",
    "live": true,
    "source": "yahoo"
