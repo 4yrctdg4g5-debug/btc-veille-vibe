@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshot_at": "2026-11-24T01:09:58+01:00",
+  "snapshot_at": "2026-11-24T01:20:08+01:00",
   "version": "vibe-market/1.1",
   "collector": "mac-launchd, 10 min",
   "errors": [],
@@ -18,18 +18,18 @@
   }
  },
  "price": {
-  "binance": 61106.1,
-  "hyperliquid": 61109.0,
-  "hl_vs_binance_pct": 0.005,
-  "chg_24h_pct": -0.11,
-  "chg_7d_pct": -5.579,
+  "binance": 61221.5,
+  "hyperliquid": 61223.0,
+  "hl_vs_binance_pct": 0.002,
+  "chg_24h_pct": 0.09,
+  "chg_7d_pct": -5.4,
   "hi_24h": 64572.8,
   "lo_24h": 60351.2,
-  "premium_index_pct": -0.062
+  "premium_index_pct": -0.041
  },
  "volume": {
-  "vol_usdt_24h": 19773108990.0,
-  "rvol_hour_current": -35.649,
+  "vol_usdt_24h": 19811103103.0,
+  "rvol_hour_current": -68.116,
   "vol_usdt_heure_en_cours": 42746733.0,
   "cvd_24h_btc": 946.778,
   "candles_24h": [
@@ -227,10 +227,10 @@
    "4h": 0.186,
    "24h": 0.225
   },
-  "hyperliquid_oi_btc": 37092.0,
+  "hyperliquid_oi_btc": 37120.0,
   "funding_binance_8h_pct": 0.00284,
   "funding_binance_avg_last32h_pct": 0.00316,
-  "funding_hyperliquid_hourly_pct": 0.00119,
+  "funding_hyperliquid_hourly_pct": 0.00125,
   "ls_top_positions": 1.5675,
   "ls_top_accounts": 3.158,
   "ls_global_accounts": 2.7679,
@@ -239,7 +239,7 @@
  "sentiment": {
   "fear_greed": 11,
   "fear_greed_veille": 11,
-  "dominance_btc_pct": 58.096
+  "dominance_btc_pct": 58.054
  },
  "mining": {
   "difficulty": 134823837323272,
@@ -250,25 +250,25 @@
   "retarget_est_date": "2026-11-27T01:13:11+01:00"
  },
  "us": {
-  "as_of": "2026-11-24T01:09:58+01:00",
+  "as_of": "2026-11-24T01:20:08+01:00",
   "source": "yahoo",
   "es_futures": {
    "symbol": "ES=F",
    "name": "E-Mini S&P 500 Dec 26",
-   "price": 7251.75,
+   "price": 7252.0,
    "prev_close": 7254.5,
-   "chg_pct": -0.038,
-   "quote_time": "2026-11-24T00:59:52+01:00",
+   "chg_pct": -0.034,
+   "quote_time": "2026-11-24T01:10:03+01:00",
    "live": true,
    "source": "yahoo"
   },
   "nq_futures": {
    "symbol": "NQ=F",
    "name": "Nasdaq 100 Dec 26",
-   "price": 26750.5,
+   "price": 26749.0,
    "prev_close": 26808.0,
-   "chg_pct": -0.214,
-   "quote_time": "2026-11-24T00:59:54+01:00",
+   "chg_pct": -0.22,
+   "quote_time": "2026-11-24T01:10:04+01:00",
    "live": true,
    "source": "yahoo"
   },
