@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshot_at": "2026-11-25T18:57:06+01:00",
+  "snapshot_at": "2026-11-25T19:07:20+01:00",
   "version": "vibe-market/1.1",
   "collector": "mac-launchd, 10 min",
   "errors": [],
@@ -18,29 +18,21 @@
   }
  },
  "price": {
-  "binance": 59656.4,
-  "hyperliquid": 59690.0,
-  "hl_vs_binance_pct": 0.056,
-  "chg_24h_pct": -0.59,
-  "chg_7d_pct": -5.521,
-  "hi_24h": 60267.0,
+  "binance": 59805.2,
+  "hyperliquid": 59824.0,
+  "hl_vs_binance_pct": 0.031,
+  "chg_24h_pct": -0.65,
+  "chg_7d_pct": -4.654,
+  "hi_24h": 60199.0,
   "lo_24h": 57256.5,
-  "premium_index_pct": -0.024
+  "premium_index_pct": -0.006
  },
  "volume": {
-  "vol_usdt_24h": 15939840101.0,
-  "rvol_hour_current": -80.681,
-  "vol_usdt_heure_en_cours": 100665922.0,
-  "cvd_24h_btc": 849.707,
+  "vol_usdt_24h": 15961070994.0,
+  "rvol_hour_current": 228.289,
+  "vol_usdt_heure_en_cours": 145359357.0,
+  "cvd_24h_btc": 1155.217,
   "candles_24h": [
-   {
-    "t": "2026-11-24T19:00:00+01:00",
-    "close": 60231.5,
-    "vol_usdt": 59015285.0,
-    "vol_ratio_btc": 979.8,
-    "delta_btc": 152.558,
-    "rvol_hour": -84.38
-   },
    {
     "t": "2026-11-24T20:00:00+01:00",
     "close": 59767.7,
@@ -216,18 +208,26 @@
     "vol_ratio_btc": 1070.4,
     "delta_btc": 67.872,
     "rvol_hour": -92.73
+   },
+   {
+    "t": "2026-11-25T18:00:00+01:00",
+    "close": 58727.8,
+    "vol_usdt": 100665922.0,
+    "vol_ratio_btc": 1714.1,
+    "delta_btc": 251.422,
+    "rvol_hour": -81.614
    }
   ]
  },
  "derivatives": {
-  "oi_btc": 99121.6,
-  "oi_usd": 5807118409.0,
+  "oi_btc": 98813.6,
+  "oi_usd": 5887331315.0,
   "oi_chg_pct": {
-   "1h": -0.429,
-   "4h": 0.745,
-   "24h": 1.159
+   "1h": -0.311,
+   "4h": -0.634,
+   "24h": 1.095
   },
-  "hyperliquid_oi_btc": 35529.0,
+  "hyperliquid_oi_btc": 35600.0,
   "funding_binance_8h_pct": 0.00609,
   "funding_binance_avg_last32h_pct": 0.0057,
   "funding_hyperliquid_hourly_pct": 0.00125,
@@ -250,155 +250,155 @@
   "retarget_est_date": "2026-11-27T03:00:59+01:00"
  },
  "us": {
-  "as_of": "2026-11-25T18:57:06+01:00",
+  "as_of": "2026-11-25T19:07:20+01:00",
   "source": "yahoo",
   "es_futures": {
    "symbol": "ES=F",
    "name": "E-Mini S&P 500 Dec 26",
-   "price": 7134.25,
+   "price": 7149.5,
    "prev_close": 7217.5,
-   "chg_pct": -1.153,
-   "quote_time": "2026-11-25T18:46:55+01:00",
+   "chg_pct": -0.942,
+   "quote_time": "2026-11-25T18:57:09+01:00",
    "live": true,
    "source": "yahoo"
   },
   "nq_futures": {
    "symbol": "NQ=F",
    "name": "Nasdaq 100 Dec 26",
-   "price": 25690.25,
+   "price": 25772.75,
    "prev_close": 26275.75,
-   "chg_pct": -2.228,
-   "quote_time": "2026-11-25T18:46:57+01:00",
+   "chg_pct": -1.914,
+   "quote_time": "2026-11-25T18:57:11+01:00",
    "live": true,
    "source": "yahoo"
   },
   "nvda": {
    "symbol": "NVDA",
    "name": "NVIDIA Corporation",
-   "price": 146.07,
+   "price": 146.21,
    "prev_close": 155.38,
-   "chg_pct": -5.992,
-   "quote_time": "2026-11-25T18:56:58+01:00",
+   "chg_pct": -5.902,
+   "quote_time": "2026-11-25T19:07:12+01:00",
    "live": true,
    "source": "yahoo"
   },
   "aapl": {
    "symbol": "AAPL",
    "name": "Apple Inc.",
-   "price": 353.34,
+   "price": 353.75,
    "prev_close": 354.07,
-   "chg_pct": -0.205,
-   "quote_time": "2026-11-25T18:56:58+01:00",
+   "chg_pct": -0.09,
+   "quote_time": "2026-11-25T19:07:12+01:00",
    "live": true,
    "source": "yahoo"
   },
   "googl": {
    "symbol": "GOOGL",
    "name": "Alphabet Inc.",
-   "price": 271.24,
+   "price": 270.44,
    "prev_close": 279.05,
-   "chg_pct": -2.799,
-   "quote_time": "2026-11-25T18:57:00+01:00",
+   "chg_pct": -3.085,
+   "quote_time": "2026-11-25T19:07:04+01:00",
    "live": true,
    "source": "yahoo"
   },
   "mu": {
    "symbol": "MU",
    "name": "Micron Technology, Inc.",
-   "price": 573.96,
+   "price": 573.94,
    "prev_close": 630.07,
-   "chg_pct": -8.906,
-   "quote_time": "2026-11-25T18:56:59+01:00",
+   "chg_pct": -8.909,
+   "quote_time": "2026-11-25T19:07:13+01:00",
    "live": true,
    "source": "yahoo"
   },
   "msft": {
    "symbol": "MSFT",
    "name": "Microsoft Corporation",
-   "price": 489.49,
+   "price": 487.15,
    "prev_close": 496.13,
-   "chg_pct": -1.338,
-   "quote_time": "2026-11-25T18:57:00+01:00",
+   "chg_pct": -1.811,
+   "quote_time": "2026-11-25T19:07:13+01:00",
    "live": true,
    "source": "yahoo"
   },
   "amd": {
    "symbol": "AMD",
    "name": "Advanced Micro Devices, Inc.",
-   "price": 392.41,
+   "price": 391.66,
    "prev_close": 413.27,
-   "chg_pct": -5.048,
-   "quote_time": "2026-11-25T18:57:00+01:00",
+   "chg_pct": -5.229,
+   "quote_time": "2026-11-25T19:07:14+01:00",
    "live": true,
    "source": "yahoo"
   },
   "amzn": {
    "symbol": "AMZN",
    "name": "Amazon.com, Inc.",
-   "price": 244.59,
+   "price": 244.09,
    "prev_close": 252.29,
-   "chg_pct": -3.052,
-   "quote_time": "2026-11-25T18:57:01+01:00",
+   "chg_pct": -3.25,
+   "quote_time": "2026-11-25T19:07:14+01:00",
    "live": true,
    "source": "yahoo"
   },
   "tsla": {
    "symbol": "TSLA",
    "name": "Tesla, Inc.",
-   "price": 371.31,
+   "price": 372.77,
    "prev_close": 384.68,
-   "chg_pct": -3.476,
-   "quote_time": "2026-11-25T18:57:02+01:00",
+   "chg_pct": -3.096,
+   "quote_time": "2026-11-25T19:07:15+01:00",
    "live": true,
    "source": "yahoo"
   },
   "intc": {
    "symbol": "INTC",
    "name": "Intel Corporation",
-   "price": 52.42,
+   "price": 52.2,
    "prev_close": 54.8,
-   "chg_pct": -4.343,
-   "quote_time": "2026-11-25T18:57:02+01:00",
+   "chg_pct": -4.735,
+   "quote_time": "2026-11-25T19:07:16+01:00",
    "live": true,
    "source": "yahoo"
   },
   "avgo": {
    "symbol": "AVGO",
    "name": "Broadcom Inc.",
-   "price": 289.77,
+   "price": 289.56,
    "prev_close": 301.08,
-   "chg_pct": -3.755,
-   "quote_time": "2026-11-25T18:57:02+01:00",
+   "chg_pct": -3.825,
+   "quote_time": "2026-11-25T19:07:17+01:00",
    "live": true,
    "source": "yahoo"
   },
   "meta": {
    "symbol": "META",
    "name": "Meta Platforms, Inc.",
-   "price": 603.42,
+   "price": 602.27,
    "prev_close": 589.82,
-   "chg_pct": 2.307,
-   "quote_time": "2026-11-25T18:57:03+01:00",
+   "chg_pct": 2.111,
+   "quote_time": "2026-11-25T19:07:17+01:00",
    "live": true,
    "source": "yahoo"
   },
   "mstr": {
    "symbol": "MSTR",
    "name": "Strategy Inc",
-   "price": 76.25,
+   "price": 77.0,
    "prev_close": 77.55,
-   "chg_pct": -1.676,
-   "quote_time": "2026-11-25T18:57:04+01:00",
+   "chg_pct": -0.709,
+   "quote_time": "2026-11-25T19:07:18+01:00",
    "live": true,
    "source": "yahoo"
   },
   "smh": {
    "symbol": "SMH",
    "name": "VanEck Semiconductor ETF",
-   "price": 411.58,
+   "price": 410.62,
    "prev_close": 426.75,
-   "chg_pct": -3.555,
-   "quote_time": "2026-11-25T18:57:03+01:00",
+   "chg_pct": -3.779,
+   "quote_time": "2026-11-25T19:07:16+01:00",
    "live": true,
    "source": "yahoo"
   },
