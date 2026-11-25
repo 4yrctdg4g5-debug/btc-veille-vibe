@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshot_at": "2026-11-25T23:52:36+01:00",
+  "snapshot_at": "2026-11-26T00:02:43+01:00",
   "version": "vibe-market/1.1",
   "collector": "mac-launchd, 10 min",
   "errors": [],
@@ -18,29 +18,21 @@
   }
  },
  "price": {
-  "binance": 60160.2,
-  "hyperliquid": 60168.0,
+  "binance": 59992.4,
+  "hyperliquid": 60000.0,
   "hl_vs_binance_pct": 0.013,
-  "chg_24h_pct": 0.28,
-  "chg_7d_pct": -4.563,
+  "chg_24h_pct": 0.07,
+  "chg_7d_pct": -5.017,
   "hi_24h": 60474.9,
   "lo_24h": 57256.5,
-  "premium_index_pct": -0.051
+  "premium_index_pct": -0.035
  },
  "volume": {
-  "vol_usdt_24h": 17009934877.0,
-  "rvol_hour_current": -94.04,
-  "vol_usdt_heure_en_cours": 21823821.0,
-  "cvd_24h_btc": 1341.469,
+  "vol_usdt_24h": 17027122283.0,
+  "rvol_hour_current": -34.053,
+  "vol_usdt_heure_en_cours": 30601467.0,
+  "cvd_24h_btc": 1171.949,
   "candles_24h": [
-   {
-    "t": "2026-11-25T00:00:00+01:00",
-    "close": 60019.4,
-    "vol_usdt": 17655685.0,
-    "vol_ratio_btc": 294.2,
-    "delta_btc": -36.97,
-    "rvol_hour": -96.323
-   },
    {
     "t": "2026-11-25T01:00:00+01:00",
     "close": 59671.1,
@@ -216,18 +208,26 @@
     "vol_ratio_btc": 183.8,
     "delta_btc": -21.984,
     "rvol_hour": -97.698
+   },
+   {
+    "t": "2026-11-25T23:00:00+01:00",
+    "close": 60128.0,
+    "vol_usdt": 21823821.0,
+    "vol_ratio_btc": 363.0,
+    "delta_btc": -97.161,
+    "rvol_hour": -94.774
    }
   ]
  },
  "derivatives": {
-  "oi_btc": 97119.7,
-  "oi_usd": 5847925142.0,
+  "oi_btc": 96891.9,
+  "oi_usd": 5822338749.0,
   "oi_chg_pct": {
-   "1h": -0.033,
-   "4h": -1.714,
-   "24h": 0.825
+   "1h": -0.235,
+   "4h": -1.198,
+   "24h": 0.555
   },
-  "hyperliquid_oi_btc": 37397.0,
+  "hyperliquid_oi_btc": 37382.0,
   "funding_binance_8h_pct": 0.00609,
   "funding_binance_avg_last32h_pct": 0.0057,
   "funding_hyperliquid_hourly_pct": 0.00125,
@@ -239,7 +239,7 @@
  "sentiment": {
   "fear_greed": 13,
   "fear_greed_veille": 11,
-  "dominance_btc_pct": 57.832
+  "dominance_btc_pct": 57.805
  },
  "mining": {
   "difficulty": 134823837323272,
@@ -250,7 +250,7 @@
   "retarget_est_date": "2026-11-27T03:32:39+01:00"
  },
  "us": {
-  "as_of": "2026-11-25T23:52:36+01:00",
+  "as_of": "2026-11-26T00:02:43+01:00",
   "source": "yahoo",
   "es_futures": {
    "symbol": "ES=F",
