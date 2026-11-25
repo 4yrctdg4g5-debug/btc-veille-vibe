@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshot_at": "2026-11-25T12:38:45+01:00",
+  "snapshot_at": "2026-11-25T12:48:52+01:00",
   "version": "vibe-market/1.1",
   "collector": "mac-launchd, 10 min",
   "errors": [],
@@ -18,18 +18,18 @@
   }
  },
  "price": {
-  "binance": 58464.1,
-  "hyperliquid": 58462.0,
-  "hl_vs_binance_pct": -0.004,
-  "chg_24h_pct": -2.33,
-  "chg_7d_pct": -8.73,
+  "binance": 58707.0,
+  "hyperliquid": 58712.0,
+  "hl_vs_binance_pct": 0.009,
+  "chg_24h_pct": -2.44,
+  "chg_7d_pct": -8.351,
   "hi_24h": 60675.7,
   "lo_24h": 58427.0,
-  "premium_index_pct": -0.055
+  "premium_index_pct": -0.03
  },
  "volume": {
-  "vol_usdt_24h": 13317556078.0,
-  "rvol_hour_current": -80.812,
+  "vol_usdt_24h": 13125936822.0,
+  "rvol_hour_current": -84.783,
   "vol_usdt_heure_en_cours": 39096817.0,
   "cvd_24h_btc": -634.635,
   "candles_24h": [
@@ -227,10 +227,10 @@
    "4h": 0.646,
    "24h": 0.509
   },
-  "hyperliquid_oi_btc": 35711.0,
+  "hyperliquid_oi_btc": 35634.0,
   "funding_binance_8h_pct": 0.00722,
   "funding_binance_avg_last32h_pct": 0.00568,
-  "funding_hyperliquid_hourly_pct": -0.00082,
+  "funding_hyperliquid_hourly_pct": -0.00074,
   "ls_top_positions": 1.8568,
   "ls_top_accounts": 3.0032,
   "ls_global_accounts": 2.5714,
@@ -239,7 +239,7 @@
  "sentiment": {
   "fear_greed": 13,
   "fear_greed_veille": 11,
-  "dominance_btc_pct": 58.521
+  "dominance_btc_pct": 58.425
  },
  "mining": {
   "difficulty": 134823837323272,
@@ -250,25 +250,25 @@
   "retarget_est_date": "2026-11-27T03:35:14+01:00"
  },
  "us": {
-  "as_of": "2026-11-25T12:38:45+01:00",
+  "as_of": "2026-11-25T12:48:52+01:00",
   "source": "yahoo",
   "es_futures": {
    "symbol": "ES=F",
    "name": "E-Mini S&P 500 Dec 26",
-   "price": 7088.5,
+   "price": 7084.25,
    "prev_close": 7217.5,
-   "chg_pct": -1.787,
-   "quote_time": "2026-11-25T12:28:35+01:00",
+   "chg_pct": -1.846,
+   "quote_time": "2026-11-25T12:38:47+01:00",
    "live": true,
    "source": "yahoo"
   },
   "nq_futures": {
    "symbol": "NQ=F",
    "name": "Nasdaq 100 Dec 26",
-   "price": 25554.5,
+   "price": 25537.75,
    "prev_close": 26275.75,
-   "chg_pct": -2.745,
-   "quote_time": "2026-11-25T12:28:43+01:00",
+   "chg_pct": -2.809,
+   "quote_time": "2026-11-25T12:38:43+01:00",
    "live": true,
    "source": "yahoo"
   },
