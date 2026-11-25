@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshot_at": "2026-11-25T08:14:38+01:00",
+  "snapshot_at": "2026-11-25T08:24:44+01:00",
   "version": "vibe-market/1.1",
   "collector": "mac-launchd, 10 min",
   "errors": [],
@@ -18,18 +18,18 @@
   }
  },
  "price": {
-  "binance": 59232.7,
-  "hyperliquid": 59234.0,
-  "hl_vs_binance_pct": 0.002,
-  "chg_24h_pct": -1.91,
-  "chg_7d_pct": -8.39,
+  "binance": 59045.3,
+  "hyperliquid": 59043.3,
+  "hl_vs_binance_pct": -0.003,
+  "chg_24h_pct": -2.27,
+  "chg_7d_pct": -8.68,
   "hi_24h": 60675.7,
   "lo_24h": 58920.0,
-  "premium_index_pct": -0.029
+  "premium_index_pct": -0.048
  },
  "volume": {
-  "vol_usdt_24h": 12786916222.0,
-  "rvol_hour_current": -86.619,
+  "vol_usdt_24h": 12804021669.0,
+  "rvol_hour_current": -92.081,
   "vol_usdt_heure_en_cours": 13985904.0,
   "cvd_24h_btc": -1339.722,
   "candles_24h": [
@@ -227,10 +227,10 @@
    "4h": 0.373,
    "24h": 0.841
   },
-  "hyperliquid_oi_btc": 35129.0,
+  "hyperliquid_oi_btc": 35122.0,
   "funding_binance_8h_pct": 0.00729,
   "funding_binance_avg_last32h_pct": 0.00459,
-  "funding_hyperliquid_hourly_pct": 0.00043,
+  "funding_hyperliquid_hourly_pct": 0.00033,
   "ls_top_positions": 1.8568,
   "ls_top_accounts": 3.0032,
   "ls_global_accounts": 2.5714,
@@ -250,25 +250,25 @@
   "retarget_est_date": "2026-11-27T02:13:27+01:00"
  },
  "us": {
-  "as_of": "2026-11-25T08:14:38+01:00",
+  "as_of": "2026-11-25T08:24:44+01:00",
   "source": "yahoo",
   "es_futures": {
    "symbol": "ES=F",
    "name": "E-Mini S&P 500 Dec 26",
-   "price": 7150.25,
+   "price": 7154.5,
    "prev_close": 7217.5,
-   "chg_pct": -0.932,
-   "quote_time": "2026-11-25T08:04:34+01:00",
+   "chg_pct": -0.873,
+   "quote_time": "2026-11-25T08:14:39+01:00",
    "live": true,
    "source": "yahoo"
   },
   "nq_futures": {
    "symbol": "NQ=F",
    "name": "Nasdaq 100 Dec 26",
-   "price": 25828.0,
+   "price": 25841.5,
    "prev_close": 26275.75,
-   "chg_pct": -1.704,
-   "quote_time": "2026-11-25T08:04:35+01:00",
+   "chg_pct": -1.653,
+   "quote_time": "2026-11-25T08:14:41+01:00",
    "live": true,
    "source": "yahoo"
   },
