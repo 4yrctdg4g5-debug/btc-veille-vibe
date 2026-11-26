@@ -1,6 +1,6 @@
 # btc-veille-vibe
 
-Routine de veille marché Bitcoin de Simon Giorgi, version « mise à niveau » :
+Routine de veille marché Bitcoin, version « mise à niveau » :
 **un seul brief par jour (9h00)** au lieu de trois, une **skill interactive de
 point marché** dans le chat, et une **collecte de données continue sur le Mac**
 (versionnée Git) qui remplace la capitalisation par les seuls briefs.
