@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshot_at": "2026-11-27T00:13:42+01:00",
+  "snapshot_at": "2026-11-27T00:23:49+01:00",
   "version": "vibe-market/1.1",
   "collector": "mac-launchd, 10 min",
   "errors": [],
@@ -18,18 +18,18 @@
   }
  },
  "price": {
-  "binance": 60436.4,
-  "hyperliquid": 60436.0,
-  "hl_vs_binance_pct": -0.001,
-  "chg_24h_pct": 0.42,
-  "chg_7d_pct": -2.707,
+  "binance": 60447.5,
+  "hyperliquid": 60444.0,
+  "hl_vs_binance_pct": -0.006,
+  "chg_24h_pct": 0.34,
+  "chg_7d_pct": -2.689,
   "hi_24h": 61603.3,
   "lo_24h": 59877.6,
-  "premium_index_pct": -0.048
+  "premium_index_pct": -0.034
  },
  "volume": {
-  "vol_usdt_24h": 8255062820.0,
-  "rvol_hour_current": -75.557,
+  "vol_usdt_24h": 8228059829.0,
+  "rvol_hour_current": -85.932,
   "vol_usdt_heure_en_cours": 22789690.0,
   "cvd_24h_btc": -461.006,
   "candles_24h": [
@@ -227,10 +227,10 @@
    "4h": -0.072,
    "24h": 1.445
   },
-  "hyperliquid_oi_btc": 34471.0,
+  "hyperliquid_oi_btc": 34505.0,
   "funding_binance_8h_pct": 0.0045,
   "funding_binance_avg_last32h_pct": 0.00676,
-  "funding_hyperliquid_hourly_pct": 0.00015,
+  "funding_hyperliquid_hourly_pct": -0.00012,
   "ls_top_positions": 1.838,
   "ls_top_accounts": 3.2589,
   "ls_global_accounts": 2.8226,
@@ -239,7 +239,7 @@
  "sentiment": {
   "fear_greed": 11,
   "fear_greed_veille": 13,
-  "dominance_btc_pct": 57.882
+  "dominance_btc_pct": 57.929
  },
  "mining": {
   "difficulty": 134823837323272,
@@ -250,25 +250,25 @@
   "retarget_est_date": "2026-11-27T05:32:56+01:00"
  },
  "us": {
-  "as_of": "2026-11-27T00:13:42+01:00",
+  "as_of": "2026-11-27T00:23:49+01:00",
   "source": "yahoo",
   "es_futures": {
    "symbol": "ES=F",
    "name": "E-Mini S&P 500 Dec 26",
-   "price": 7242.0,
+   "price": 7237.75,
    "prev_close": 7195.75,
-   "chg_pct": 0.643,
-   "quote_time": "2026-11-27T00:03:39+01:00",
+   "chg_pct": 0.584,
+   "quote_time": "2026-11-27T00:13:46+01:00",
    "live": true,
    "source": "yahoo"
   },
   "nq_futures": {
    "symbol": "NQ=F",
    "name": "Nasdaq 100 Dec 26",
-   "price": 26261.25,
+   "price": 26228.5,
    "prev_close": 26100.25,
-   "chg_pct": 0.617,
-   "quote_time": "2026-11-27T00:03:39+01:00",
+   "chg_pct": 0.491,
+   "quote_time": "2026-11-27T00:13:46+01:00",
    "live": true,
    "source": "yahoo"
   },
