@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshot_at": "2026-11-26T21:52:22+01:00",
+  "snapshot_at": "2026-11-26T22:02:30+01:00",
   "version": "vibe-market/1.1",
   "collector": "mac-launchd, 10 min",
   "errors": [],
@@ -18,29 +18,21 @@
   }
  },
  "price": {
-  "binance": 60757.6,
-  "hyperliquid": 60749.0,
-  "hl_vs_binance_pct": -0.014,
-  "chg_24h_pct": 0.96,
-  "chg_7d_pct": -1.227,
+  "binance": 60785.0,
+  "hyperliquid": 60782.0,
+  "hl_vs_binance_pct": -0.005,
+  "chg_24h_pct": 0.94,
+  "chg_7d_pct": -2.184,
   "hi_24h": 61603.3,
   "lo_24h": 59877.6,
-  "premium_index_pct": -0.039
+  "premium_index_pct": -0.026
  },
  "volume": {
-  "vol_usdt_24h": 8619172804.0,
-  "rvol_hour_current": -98.764,
-  "vol_usdt_heure_en_cours": 3624913.0,
-  "cvd_24h_btc": -667.469,
+  "vol_usdt_24h": 8460103314.0,
+  "rvol_hour_current": -87.712,
+  "vol_usdt_heure_en_cours": 5580265.0,
+  "cvd_24h_btc": -565.986,
   "candles_24h": [
-   {
-    "t": "2026-11-25T22:00:00+01:00",
-    "close": 60191.9,
-    "vol_usdt": 11064211.0,
-    "vol_ratio_btc": 183.8,
-    "delta_btc": -21.984,
-    "rvol_hour": -97.698
-   },
    {
     "t": "2026-11-25T23:00:00+01:00",
     "close": 60128.0,
@@ -216,21 +208,29 @@
     "vol_ratio_btc": 370.7,
     "delta_btc": 51.534,
     "rvol_hour": -93.204
+   },
+   {
+    "t": "2026-11-26T21:00:00+01:00",
+    "close": 60667.9,
+    "vol_usdt": 3624913.0,
+    "vol_ratio_btc": 59.8,
+    "delta_btc": -17.323,
+    "rvol_hour": -98.921
    }
   ]
  },
  "derivatives": {
-  "oi_btc": 98331.7,
-  "oi_usd": 5968755070.0,
+  "oi_btc": 98355.8,
+  "oi_usd": 5975094511.0,
   "oi_chg_pct": {
-   "1h": -0.032,
-   "4h": 0.306,
-   "24h": 0.624
+   "1h": 0.024,
+   "4h": 0.492,
+   "24h": 1.24
   },
-  "hyperliquid_oi_btc": 34051.0,
+  "hyperliquid_oi_btc": 34046.0,
   "funding_binance_8h_pct": 0.0045,
   "funding_binance_avg_last32h_pct": 0.00676,
-  "funding_hyperliquid_hourly_pct": 0.00119,
+  "funding_hyperliquid_hourly_pct": 0.00125,
   "ls_top_positions": 1.838,
   "ls_top_accounts": 3.2589,
   "ls_global_accounts": 2.8226,
@@ -250,7 +250,7 @@
   "retarget_est_date": "2026-11-27T05:32:56+01:00"
  },
  "us": {
-  "as_of": "2026-11-26T21:52:22+01:00",
+  "as_of": "2026-11-26T22:02:30+01:00",
   "source": "yahoo",
   "es_futures": {
    "symbol": "ES=F",
