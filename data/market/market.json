@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshot_at": "2026-11-26T17:06:28+01:00",
+  "snapshot_at": "2026-11-26T17:16:41+01:00",
   "version": "vibe-market/1.1",
   "collector": "mac-launchd, 10 min",
   "errors": [],
@@ -18,18 +18,18 @@
   }
  },
  "price": {
-  "binance": 60710.3,
-  "hyperliquid": 60702.0,
-  "hl_vs_binance_pct": -0.014,
-  "chg_24h_pct": 4.2,
-  "chg_7d_pct": -3.226,
+  "binance": 60570.0,
+  "hyperliquid": 60559.8,
+  "hl_vs_binance_pct": -0.017,
+  "chg_24h_pct": 3.65,
+  "chg_7d_pct": -3.45,
   "hi_24h": 61603.3,
   "lo_24h": 58066.2,
-  "premium_index_pct": -0.031
+  "premium_index_pct": -0.028
  },
  "volume": {
-  "vol_usdt_24h": 12101982082.0,
-  "rvol_hour_current": 15.902,
+  "vol_usdt_24h": 11988938996.0,
+  "rvol_hour_current": -55.017,
   "vol_usdt_heure_en_cours": 91887382.0,
   "cvd_24h_btc": -280.978,
   "candles_24h": [
@@ -227,10 +227,10 @@
    "4h": 1.145,
    "24h": -1.523
   },
-  "hyperliquid_oi_btc": 35113.0,
+  "hyperliquid_oi_btc": 35205.0,
   "funding_binance_8h_pct": 0.0045,
   "funding_binance_avg_last32h_pct": 0.00676,
-  "funding_hyperliquid_hourly_pct": 8e-05,
+  "funding_hyperliquid_hourly_pct": -0.00013,
   "ls_top_positions": 1.838,
   "ls_top_accounts": 3.2589,
   "ls_global_accounts": 2.8226,
@@ -239,7 +239,7 @@
  "sentiment": {
   "fear_greed": 11,
   "fear_greed_veille": 13,
-  "dominance_btc_pct": 57.915
+  "dominance_btc_pct": 57.991
  },
  "mining": {
   "difficulty": 134823837323272,
@@ -250,25 +250,25 @@
   "retarget_est_date": "2026-11-27T02:24:01+01:00"
  },
  "us": {
-  "as_of": "2026-11-26T17:06:28+01:00",
+  "as_of": "2026-11-26T17:16:41+01:00",
   "source": "yahoo",
   "es_futures": {
    "symbol": "ES=F",
    "name": "E-Mini S&P 500 Dec 26",
-   "price": 7252.0,
+   "price": 7254.0,
    "prev_close": 7195.75,
-   "chg_pct": 0.782,
-   "quote_time": "2026-11-26T16:56:19+01:00",
+   "chg_pct": 0.81,
+   "quote_time": "2026-11-26T17:06:31+01:00",
    "live": true,
    "source": "yahoo"
   },
   "nq_futures": {
    "symbol": "NQ=F",
    "name": "Nasdaq 100 Dec 26",
-   "price": 26302.25,
+   "price": 26309.75,
    "prev_close": 26100.25,
-   "chg_pct": 0.774,
-   "quote_time": "2026-11-26T16:56:20+01:00",
+   "chg_pct": 0.803,
+   "quote_time": "2026-11-26T17:06:30+01:00",
    "live": true,
    "source": "yahoo"
   },
