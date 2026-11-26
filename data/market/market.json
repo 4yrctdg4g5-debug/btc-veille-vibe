@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshot_at": "2026-11-26T19:49:51+01:00",
+  "snapshot_at": "2026-11-26T20:00:04+01:00",
   "version": "vibe-market/1.1",
   "collector": "mac-launchd, 10 min",
   "errors": [],
@@ -18,20 +18,20 @@
   }
  },
  "price": {
-  "binance": 60584.1,
-  "hyperliquid": 60576.0,
-  "hl_vs_binance_pct": -0.013,
-  "chg_24h_pct": 1.38,
-  "chg_7d_pct": -2.818,
+  "binance": 60456.0,
+  "hyperliquid": 60452.0,
+  "hl_vs_binance_pct": -0.007,
+  "chg_24h_pct": 1.24,
+  "chg_7d_pct": -3.024,
   "hi_24h": 61603.3,
-  "lo_24h": 59658.0,
-  "premium_index_pct": -0.032
+  "lo_24h": 59664.8,
+  "premium_index_pct": -0.022
  },
  "volume": {
-  "vol_usdt_24h": 9468537649.0,
-  "rvol_hour_current": -92.208,
+  "vol_usdt_24h": 9490232189.0,
+  "rvol_hour_current": -93.524,
   "vol_usdt_heure_en_cours": 21718993.0,
-  "cvd_24h_btc": -394.038,
+  "cvd_24h_btc": -367.952,
   "candles_24h": [
    {
     "t": "2026-11-25T20:00:00+01:00",
@@ -216,6 +216,14 @@
     "vol_ratio_btc": 535.6,
     "delta_btc": 26.701,
     "rvol_hour": -93.566
+   },
+   {
+    "t": "2026-11-26T19:00:00+01:00",
+    "close": 60536.0,
+    "vol_usdt": 21718993.0,
+    "vol_ratio_btc": 358.8,
+    "delta_btc": 58.653,
+    "rvol_hour": -93.524
    }
   ]
  },
@@ -227,10 +235,10 @@
    "4h": 1.177,
    "24h": -0.652
   },
-  "hyperliquid_oi_btc": 35389.0,
+  "hyperliquid_oi_btc": 35306.0,
   "funding_binance_8h_pct": 0.0045,
   "funding_binance_avg_last32h_pct": 0.00676,
-  "funding_hyperliquid_hourly_pct": 0.00018,
+  "funding_hyperliquid_hourly_pct": 0.00016,
   "ls_top_positions": 1.838,
   "ls_top_accounts": 3.2589,
   "ls_global_accounts": 2.8226,
@@ -250,7 +258,7 @@
   "retarget_est_date": "2026-11-27T02:24:01+01:00"
  },
  "us": {
-  "as_of": "2026-11-26T19:49:51+01:00",
+  "as_of": "2026-11-26T20:00:04+01:00",
   "source": "yahoo",
   "es_futures": {
    "symbol": "ES=F",
