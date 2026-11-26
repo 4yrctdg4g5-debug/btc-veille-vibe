@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshot_at": "2026-11-26T22:52:59+01:00",
+  "snapshot_at": "2026-11-26T23:03:04+01:00",
   "version": "vibe-market/1.1",
   "collector": "mac-launchd, 10 min",
   "errors": [],
@@ -18,29 +18,21 @@
   }
  },
  "price": {
-  "binance": 60851.1,
-  "hyperliquid": 60851.2,
-  "hl_vs_binance_pct": 0.0,
-  "chg_24h_pct": 0.89,
-  "chg_7d_pct": -2.078,
+  "binance": 60732.0,
+  "hyperliquid": 60731.0,
+  "hl_vs_binance_pct": -0.002,
+  "chg_24h_pct": 1.02,
+  "chg_7d_pct": -1.981,
   "hi_24h": 61603.3,
   "lo_24h": 59877.6,
-  "premium_index_pct": -0.046
+  "premium_index_pct": -0.042
  },
  "volume": {
-  "vol_usdt_24h": 8312231375.0,
-  "rvol_hour_current": -98.609,
-  "vol_usdt_heure_en_cours": 5580265.0,
-  "cvd_24h_btc": -565.986,
+  "vol_usdt_24h": 8300075124.0,
+  "rvol_hour_current": -60.682,
+  "vol_usdt_heure_en_cours": 15457944.0,
+  "cvd_24h_btc": -487.165,
   "candles_24h": [
-   {
-    "t": "2026-11-25T23:00:00+01:00",
-    "close": 60128.0,
-    "vol_usdt": 21823821.0,
-    "vol_ratio_btc": 363.0,
-    "delta_btc": -97.161,
-    "rvol_hour": -94.774
-   },
    {
     "t": "2026-11-26T00:00:00+01:00",
     "close": 59988.0,
@@ -216,21 +208,29 @@
     "vol_ratio_btc": 59.8,
     "delta_btc": -17.323,
     "rvol_hour": -98.921
+   },
+   {
+    "t": "2026-11-26T22:00:00+01:00",
+    "close": 60768.9,
+    "vol_usdt": 5580265.0,
+    "vol_ratio_btc": 91.8,
+    "delta_btc": 56.837,
+    "rvol_hour": -98.771
    }
   ]
  },
  "derivatives": {
-  "oi_btc": 98355.8,
-  "oi_usd": 5975094511.0,
+  "oi_btc": 98193.1,
+  "oi_usd": 5969364263.0,
   "oi_chg_pct": {
-   "1h": 0.024,
-   "4h": 0.492,
-   "24h": 1.24
+   "1h": -0.165,
+   "4h": 0.024,
+   "24h": 1.105
   },
-  "hyperliquid_oi_btc": 34005.0,
+  "hyperliquid_oi_btc": 34101.0,
   "funding_binance_8h_pct": 0.0045,
   "funding_binance_avg_last32h_pct": 0.00676,
-  "funding_hyperliquid_hourly_pct": 0.00125,
+  "funding_hyperliquid_hourly_pct": 0.0004,
   "ls_top_positions": 1.838,
   "ls_top_accounts": 3.2589,
   "ls_global_accounts": 2.8226,
@@ -250,7 +250,7 @@
   "retarget_est_date": "2026-11-27T05:32:56+01:00"
  },
  "us": {
-  "as_of": "2026-11-26T22:52:59+01:00",
+  "as_of": "2026-11-26T23:03:04+01:00",
   "source": "yahoo",
   "es_futures": {
    "symbol": "ES=F",
