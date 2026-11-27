@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshot_at": "2026-11-27T12:12:00+01:00",
+  "snapshot_at": "2026-11-27T12:22:05+01:00",
   "version": "vibe-market/1.1",
   "collector": "mac-launchd, 10 min",
   "errors": [],
@@ -18,18 +18,18 @@
   }
  },
  "price": {
-  "binance": 61567.3,
-  "hyperliquid": 61581.0,
-  "hl_vs_binance_pct": 0.022,
-  "chg_24h_pct": 1.68,
-  "chg_7d_pct": 0.052,
+  "binance": 61625.2,
+  "hyperliquid": 61636.0,
+  "hl_vs_binance_pct": 0.018,
+  "chg_24h_pct": 1.61,
+  "chg_7d_pct": 0.147,
   "hi_24h": 62206.9,
   "lo_24h": 59877.6,
-  "premium_index_pct": -0.031
+  "premium_index_pct": -0.047
  },
  "volume": {
-  "vol_usdt_24h": 8825849730.0,
-  "rvol_hour_current": -77.319,
+  "vol_usdt_24h": 8808929942.0,
+  "rvol_hour_current": -87.677,
   "vol_usdt_heure_en_cours": 13398149.0,
   "cvd_24h_btc": 1177.606,
   "candles_24h": [
@@ -227,10 +227,10 @@
    "4h": -1.538,
    "24h": 0.951
   },
-  "hyperliquid_oi_btc": 35269.0,
+  "hyperliquid_oi_btc": 35535.0,
   "funding_binance_8h_pct": 0.00503,
   "funding_binance_avg_last32h_pct": 0.00697,
-  "funding_hyperliquid_hourly_pct": 0.00091,
+  "funding_hyperliquid_hourly_pct": 0.00125,
   "ls_top_positions": 1.951,
   "ls_top_accounts": 2.9573,
   "ls_global_accounts": 2.4941,
@@ -250,25 +250,25 @@
   "retarget_est_date": "2026-12-12T05:40:18+01:00"
  },
  "us": {
-  "as_of": "2026-11-27T12:12:00+01:00",
+  "as_of": "2026-11-27T12:22:05+01:00",
   "source": "yahoo",
   "es_futures": {
    "symbol": "ES=F",
    "name": "E-Mini S&P 500 Dec 26",
-   "price": 7327.75,
+   "price": 7325.75,
    "prev_close": 7195.75,
-   "chg_pct": 1.834,
-   "quote_time": "2026-11-27T12:01:57+01:00",
+   "chg_pct": 1.807,
+   "quote_time": "2026-11-27T12:12:02+01:00",
    "live": true,
    "source": "yahoo"
   },
   "nq_futures": {
    "symbol": "NQ=F",
    "name": "Nasdaq 100 Dec 26",
-   "price": 26748.5,
+   "price": 26745.5,
    "prev_close": 26100.25,
-   "chg_pct": 2.484,
-   "quote_time": "2026-11-27T12:01:55+01:00",
+   "chg_pct": 2.472,
+   "quote_time": "2026-11-27T12:12:00+01:00",
    "live": true,
    "source": "yahoo"
   },
