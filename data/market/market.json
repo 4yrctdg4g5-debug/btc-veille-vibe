@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshot_at": "2026-11-27T13:42:54+01:00",
+  "snapshot_at": "2026-11-27T13:53:00+01:00",
   "version": "vibe-market/1.1",
   "collector": "mac-launchd, 10 min",
   "errors": [],
@@ -18,18 +18,18 @@
   }
  },
  "price": {
-  "binance": 61558.1,
-  "hyperliquid": 61577.0,
-  "hl_vs_binance_pct": 0.031,
-  "chg_24h_pct": 1.06,
-  "chg_7d_pct": -0.485,
+  "binance": 61430.1,
+  "hyperliquid": 61443.0,
+  "hl_vs_binance_pct": 0.021,
+  "chg_24h_pct": 0.92,
+  "chg_7d_pct": -0.692,
   "hi_24h": 62206.9,
   "lo_24h": 59877.6,
-  "premium_index_pct": -0.039
+  "premium_index_pct": -0.047
  },
  "volume": {
-  "vol_usdt_24h": 8835277409.0,
-  "rvol_hour_current": -94.883,
+  "vol_usdt_24h": 8823834935.0,
+  "rvol_hour_current": -95.857,
   "vol_usdt_heure_en_cours": 14533131.0,
   "cvd_24h_btc": 1137.542,
   "candles_24h": [
@@ -227,7 +227,7 @@
    "4h": -1.234,
    "24h": 0.87
   },
-  "hyperliquid_oi_btc": 37964.0,
+  "hyperliquid_oi_btc": 37791.0,
   "funding_binance_8h_pct": 0.00503,
   "funding_binance_avg_last32h_pct": 0.00697,
   "funding_hyperliquid_hourly_pct": 0.00125,
@@ -250,25 +250,25 @@
   "retarget_est_date": "2026-12-12T05:40:18+01:00"
  },
  "us": {
-  "as_of": "2026-11-27T13:42:54+01:00",
+  "as_of": "2026-11-27T13:52:59+01:00",
   "source": "yahoo",
   "es_futures": {
    "symbol": "ES=F",
    "name": "E-Mini S&P 500 Dec 26",
-   "price": 7308.5,
+   "price": 7311.5,
    "prev_close": 7195.75,
-   "chg_pct": 1.567,
-   "quote_time": "2026-11-27T13:32:50+01:00",
+   "chg_pct": 1.609,
+   "quote_time": "2026-11-27T13:42:55+01:00",
    "live": true,
    "source": "yahoo"
   },
   "nq_futures": {
    "symbol": "NQ=F",
    "name": "Nasdaq 100 Dec 26",
-   "price": 26658.0,
+   "price": 26677.25,
    "prev_close": 26100.25,
-   "chg_pct": 2.137,
-   "quote_time": "2026-11-27T13:32:47+01:00",
+   "chg_pct": 2.211,
+   "quote_time": "2026-11-27T13:42:57+01:00",
    "live": true,
    "source": "yahoo"
   },
