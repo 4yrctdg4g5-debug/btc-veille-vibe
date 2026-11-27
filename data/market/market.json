@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshot_at": "2026-11-27T10:50:40+01:00",
+  "snapshot_at": "2026-11-27T11:00:52+01:00",
   "version": "vibe-market/1.1",
   "collector": "mac-launchd, 10 min",
   "errors": [],
@@ -18,29 +18,21 @@
   }
  },
  "price": {
-  "binance": 61633.2,
-  "hyperliquid": 61643.0,
-  "hl_vs_binance_pct": 0.016,
+  "binance": 61610.9,
+  "hyperliquid": 61622.8,
+  "hl_vs_binance_pct": 0.019,
   "chg_24h_pct": 1.15,
-  "chg_7d_pct": -0.632,
+  "chg_7d_pct": -0.284,
   "hi_24h": 62206.9,
   "lo_24h": 59877.6,
-  "premium_index_pct": -0.052
+  "premium_index_pct": -0.053
  },
  "volume": {
-  "vol_usdt_24h": 8884827610.0,
-  "rvol_hour_current": -85.14,
-  "vol_usdt_heure_en_cours": 50265119.0,
-  "cvd_24h_btc": 1189.967,
+  "vol_usdt_24h": 8925485307.0,
+  "rvol_hour_current": -92.038,
+  "vol_usdt_heure_en_cours": 2181328.0,
+  "cvd_24h_btc": 1149.033,
   "candles_24h": [
-   {
-    "t": "2026-11-26T11:00:00+01:00",
-    "close": 60900.1,
-    "vol_usdt": 1380684.0,
-    "vol_ratio_btc": 22.7,
-    "delta_btc": -16.09,
-    "rvol_hour": -99.514
-   },
    {
     "t": "2026-11-26T12:00:00+01:00",
     "close": 60503.8,
@@ -216,18 +208,26 @@
     "vol_ratio_btc": 1638.5,
     "delta_btc": 260.473,
     "rvol_hour": -74.237
+   },
+   {
+    "t": "2026-11-27T10:00:00+01:00",
+    "close": 61796.3,
+    "vol_usdt": 50265119.0,
+    "vol_ratio_btc": 813.4,
+    "delta_btc": 33.353,
+    "rvol_hour": -87.448
    }
   ]
  },
  "derivatives": {
-  "oi_btc": 98043.8,
-  "oi_usd": 6048896685.0,
+  "oi_btc": 98051.5,
+  "oi_usd": 6040571130.0,
   "oi_chg_pct": {
-   "1h": -0.952,
-   "4h": -1.174,
-   "24h": 1.5
+   "1h": 0.008,
+   "4h": -1.314,
+   "24h": 1.251
   },
-  "hyperliquid_oi_btc": 34530.0,
+  "hyperliquid_oi_btc": 34526.0,
   "funding_binance_8h_pct": 0.00503,
   "funding_binance_avg_last32h_pct": 0.00697,
   "funding_hyperliquid_hourly_pct": 0.00125,
@@ -250,25 +250,25 @@
   "retarget_est_date": "2026-12-12T05:40:18+01:00"
  },
  "us": {
-  "as_of": "2026-11-27T10:50:40+01:00",
+  "as_of": "2026-11-27T11:00:52+01:00",
   "source": "yahoo",
   "es_futures": {
    "symbol": "ES=F",
    "name": "E-Mini S&P 500 Dec 26",
-   "price": 7335.25,
+   "price": 7324.0,
    "prev_close": 7195.75,
-   "chg_pct": 1.939,
-   "quote_time": "2026-11-27T10:40:31+01:00",
+   "chg_pct": 1.782,
+   "quote_time": "2026-11-27T10:50:42+01:00",
    "live": true,
    "source": "yahoo"
   },
   "nq_futures": {
    "symbol": "NQ=F",
    "name": "Nasdaq 100 Dec 26",
-   "price": 26825.75,
+   "price": 26737.0,
    "prev_close": 26100.25,
-   "chg_pct": 2.78,
-   "quote_time": "2026-11-27T10:40:31+01:00",
+   "chg_pct": 2.44,
+   "quote_time": "2026-11-27T10:50:42+01:00",
    "live": true,
    "source": "yahoo"
   },
