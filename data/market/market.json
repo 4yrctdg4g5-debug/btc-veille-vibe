@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshot_at": "2026-11-27T22:53:14+01:00",
+  "snapshot_at": "2026-11-27T23:03:20+01:00",
   "version": "vibe-market/1.1",
   "collector": "mac-launchd, 10 min",
   "errors": [],
@@ -18,29 +18,21 @@
   }
  },
  "price": {
-  "binance": 59774.2,
-  "hyperliquid": 59771.0,
-  "hl_vs_binance_pct": -0.005,
-  "chg_24h_pct": -1.77,
-  "chg_7d_pct": 1.086,
+  "binance": 59715.0,
+  "hyperliquid": 59714.0,
+  "hl_vs_binance_pct": -0.002,
+  "chg_24h_pct": -1.68,
+  "chg_7d_pct": 1.358,
   "hi_24h": 62206.9,
   "lo_24h": 58750.0,
-  "premium_index_pct": -0.049
+  "premium_index_pct": -0.038
  },
  "volume": {
-  "vol_usdt_24h": 14020599594.0,
-  "rvol_hour_current": -81.067,
-  "vol_usdt_heure_en_cours": 85076859.0,
-  "cvd_24h_btc": -85.42,
+  "vol_usdt_24h": 14012481630.0,
+  "rvol_hour_current": -70.089,
+  "vol_usdt_heure_en_cours": 12756717.0,
+  "cvd_24h_btc": -388.775,
   "candles_24h": [
-   {
-    "t": "2026-11-26T23:00:00+01:00",
-    "close": 60523.5,
-    "vol_usdt": 227988968.0,
-    "vol_ratio_btc": 3766.9,
-    "delta_btc": 7.51,
-    "rvol_hour": -46.512
-   },
    {
     "t": "2026-11-27T00:00:00+01:00",
     "close": 60544.2,
@@ -216,21 +208,29 @@
     "vol_ratio_btc": 3245.5,
     "delta_btc": 13.674,
     "rvol_hour": -51.116
+   },
+   {
+    "t": "2026-11-27T22:00:00+01:00",
+    "close": 59769.4,
+    "vol_usdt": 95096533.0,
+    "vol_ratio_btc": 1591.1,
+    "delta_btc": -92.954,
+    "rvol_hour": -81.223
    }
   ]
  },
  "derivatives": {
-  "oi_btc": 98366.4,
-  "oi_usd": 5880342039.0,
+  "oi_btc": 98325.9,
+  "oi_usd": 5877016207.0,
   "oi_chg_pct": {
-   "1h": 0.255,
-   "4h": 0.272,
-   "24h": 0.011
+   "1h": -0.041,
+   "4h": 0.229,
+   "24h": 0.135
   },
-  "hyperliquid_oi_btc": 35563.0,
+  "hyperliquid_oi_btc": 35692.0,
   "funding_binance_8h_pct": 0.00116,
   "funding_binance_avg_last32h_pct": 0.00514,
-  "funding_hyperliquid_hourly_pct": 0.0004,
+  "funding_hyperliquid_hourly_pct": -0.0004,
   "ls_top_positions": 1.951,
   "ls_top_accounts": 2.9573,
   "ls_global_accounts": 2.4941,
@@ -250,7 +250,7 @@
   "retarget_est_date": "2026-12-12T03:18:51+01:00"
  },
  "us": {
-  "as_of": "2026-11-27T22:53:14+01:00",
+  "as_of": "2026-11-27T23:03:20+01:00",
   "source": "yahoo",
   "es_futures": {
    "symbol": "ES=F",
@@ -261,7 +261,7 @@
    "quote_time": "2026-11-27T19:14:59+01:00",
    "live": false,
    "source": "yahoo",
-   "stale_reason": "cotation vieille de 218 min (> 20 min) : marché fermé ou hors séance"
+   "stale_reason": "cotation vieille de 228 min (> 20 min) : marché fermé ou hors séance"
   },
   "nq_futures": {
    "symbol": "NQ=F",
@@ -272,7 +272,7 @@
    "quote_time": "2026-11-27T19:14:59+01:00",
    "live": false,
    "source": "yahoo",
-   "stale_reason": "cotation vieille de 218 min (> 20 min) : marché fermé ou hors séance"
+   "stale_reason": "cotation vieille de 228 min (> 20 min) : marché fermé ou hors séance"
   },
   "nvda": {
    "symbol": "NVDA",
@@ -283,7 +283,7 @@
    "quote_time": "2026-11-27T19:00:00+01:00",
    "live": false,
    "source": "yahoo",
-   "stale_reason": "cotation vieille de 233 min (> 20 min) : marché fermé ou hors séance"
+   "stale_reason": "cotation vieille de 243 min (> 20 min) : marché fermé ou hors séance"
   },
   "aapl": {
    "symbol": "AAPL",
@@ -294,7 +294,7 @@
    "quote_time": "2026-11-27T19:00:01+01:00",
    "live": false,
    "source": "yahoo",
-   "stale_reason": "cotation vieille de 233 min (> 20 min) : marché fermé ou hors séance"
+   "stale_reason": "cotation vieille de 243 min (> 20 min) : marché fermé ou hors séance"
   },
   "googl": {
    "symbol": "GOOGL",
@@ -305,7 +305,7 @@
    "quote_time": "2026-11-27T19:00:01+01:00",
    "live": false,
    "source": "yahoo",
-   "stale_reason": "cotation vieille de 233 min (> 20 min) : marché fermé ou hors séance"
+   "stale_reason": "cotation vieille de 243 min (> 20 min) : marché fermé ou hors séance"
   },
   "mu": {
    "symbol": "MU",
@@ -316,7 +316,7 @@
    "quote_time": "2026-11-27T19:00:01+01:00",
    "live": false,
    "source": "yahoo",
-   "stale_reason": "cotation vieille de 233 min (> 20 min) : marché fermé ou hors séance"
+   "stale_reason": "cotation vieille de 243 min (> 20 min) : marché fermé ou hors séance"
   },
   "msft": {
    "symbol": "MSFT",
@@ -327,7 +327,7 @@
    "quote_time": "2026-11-27T19:00:01+01:00",
    "live": false,
    "source": "yahoo",
-   "stale_reason": "cotation vieille de 233 min (> 20 min) : marché fermé ou hors séance"
+   "stale_reason": "cotation vieille de 243 min (> 20 min) : marché fermé ou hors séance"
   },
   "amd": {
    "symbol": "AMD",
@@ -338,7 +338,7 @@
    "quote_time": "2026-11-27T19:00:01+01:00",
    "live": false,
    "source": "yahoo",
-   "stale_reason": "cotation vieille de 233 min (> 20 min) : marché fermé ou hors séance"
+   "stale_reason": "cotation vieille de 243 min (> 20 min) : marché fermé ou hors séance"
   },
   "amzn": {
    "symbol": "AMZN",
@@ -349,7 +349,7 @@
    "quote_time": "2026-11-27T19:00:01+01:00",
    "live": false,
    "source": "yahoo",
-   "stale_reason": "cotation vieille de 233 min (> 20 min) : marché fermé ou hors séance"
+   "stale_reason": "cotation vieille de 243 min (> 20 min) : marché fermé ou hors séance"
   },
   "tsla": {
    "symbol": "TSLA",
@@ -360,7 +360,7 @@
    "quote_time": "2026-11-27T19:00:00+01:00",
    "live": false,
    "source": "yahoo",
-   "stale_reason": "cotation vieille de 233 min (> 20 min) : marché fermé ou hors séance"
+   "stale_reason": "cotation vieille de 243 min (> 20 min) : marché fermé ou hors séance"
   },
   "intc": {
    "symbol": "INTC",
@@ -371,7 +371,7 @@
    "quote_time": "2026-11-27T19:00:01+01:00",
    "live": false,
    "source": "yahoo",
-   "stale_reason": "cotation vieille de 233 min (> 20 min) : marché fermé ou hors séance"
+   "stale_reason": "cotation vieille de 243 min (> 20 min) : marché fermé ou hors séance"
   },
   "avgo": {
    "symbol": "AVGO",
@@ -382,7 +382,7 @@
    "quote_time": "2026-11-27T19:00:01+01:00",
    "live": false,
    "source": "yahoo",
-   "stale_reason": "cotation vieille de 233 min (> 20 min) : marché fermé ou hors séance"
+   "stale_reason": "cotation vieille de 243 min (> 20 min) : marché fermé ou hors séance"
   },
   "meta": {
    "symbol": "META",
@@ -393,7 +393,7 @@
    "quote_time": "2026-11-27T19:00:01+01:00",
    "live": false,
    "source": "yahoo",
-   "stale_reason": "cotation vieille de 233 min (> 20 min) : marché fermé ou hors séance"
+   "stale_reason": "cotation vieille de 243 min (> 20 min) : marché fermé ou hors séance"
   },
   "mstr": {
    "symbol": "MSTR",
@@ -404,7 +404,7 @@
    "quote_time": "2026-11-27T19:00:01+01:00",
    "live": false,
    "source": "yahoo",
-   "stale_reason": "cotation vieille de 233 min (> 20 min) : marché fermé ou hors séance"
+   "stale_reason": "cotation vieille de 243 min (> 20 min) : marché fermé ou hors séance"
   },
   "smh": {
    "symbol": "SMH",
@@ -415,7 +415,7 @@
    "quote_time": "2026-11-27T19:00:00+01:00",
    "live": false,
    "source": "yahoo",
-   "stale_reason": "cotation vieille de 233 min (> 20 min) : marché fermé ou hors séance"
+   "stale_reason": "cotation vieille de 243 min (> 20 min) : marché fermé ou hors séance"
   },
   "unavailable": []
  }
