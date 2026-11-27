@@ -20,6 +20,10 @@ Sources (une panne d'une source ne doit jamais arrêter les autres) :
   - alternative.me : Fear & Greed (historique accumulé).
   - CoinGecko : dominance BTC.
   - mempool.space : difficulté, retarget estimé, hashrate (SMA 7j/30j).
+  - Yahoo Finance (secours Stooq) : futures ES/NQ (ES=F, NQ=F) + panier
+    actions US (top 10 du Nasdaq-100 + META, MSTR, SMH) pour le bloc "us"
+    du market.json (contexte d'ouverture US) ; valeurs brutes, jamais
+    d'analyse ici.
 
 Sorties (data/market/) :
   - market.json       snapshot enrichi du run (publié, lu par point-marche)
@@ -53,6 +57,7 @@ import sys
 import tempfile
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 import zoneinfo
 
@@ -90,6 +95,49 @@ RVOL_DAY_N = 20              # RVOL journalier = vs moyenne des 20 jours préc.
 MINING_TTL = 6 * 3600
 DOM_TTL = 60 * 60
 FG_TTL = 60 * 60
+
+# Actions/futures US : contexte d'ouverture (biais, jamais une prédiction).
+# Panier fixé le 23/11/2026 depuis le dépôt SEC T2-2026 du fonds de suivi du
+# Nasdaq-100 (roulé aux prix du 08/09/2026) : top 10 NDX (~48 % de l'indice)
+# + META + MSTR (proxy BTC) + SMH (complexe semi-conducteurs). À réviser à
+# chaque publication trimestrielle des poids. Ajouter un symbole ici suffit :
+# le snapshot publie automatiquement toutes les clés de ce dictionnaire.
+US_SYMBOLS = {  # Yahoo Finance (chart API, sans clé)
+    "es_futures": "ES=F",   # futur S&P 500 : agrégat, direction d'ouverture
+    "nq_futures": "NQ=F",   # futur Nasdaq-100 : agrégat, direction d'ouverture
+    "nvda": "NVDA",         # ~8-9 % du NDX, plus grosse weight
+    "aapl": "AAPL",
+    "googl": "GOOGL",
+    "mu": "MU",
+    "msft": "MSFT",
+    "amd": "AMD",
+    "amzn": "AMZN",
+    "tsla": "TSLA",
+    "intc": "INTC",
+    "avgo": "AVGO",
+    "meta": "META",
+    "mstr": "MSTR",         # proxy BTC coté
+    "smh": "SMH",           # ETF semi-conducteurs : secteur
+}
+US_STOOQ = {  # secours Stooq (clôtures journalières seulement)
+    "es_futures": "es.f",
+    "nq_futures": "nq.f",
+    "nvda": "nvda.us",
+    "aapl": "aapl.us",
+    "googl": "googl.us",
+    "mu": "mu.us",
+    "msft": "msft.us",
+    "amd": "amd.us",
+    "amzn": "amzn.us",
+    "tsla": "tsla.us",
+    "intc": "intc.us",
+    "avgo": "avgo.us",
+    "meta": "meta.us",
+    "mstr": "mstr.us",
+    "smh": "smh.us",
+}
+
+US_LIVE_MAX_AGE_MIN = 20     # au-delà, une cotation Yahoo n'est plus "live"
 
 UA_HEADERS = {"User-Agent": UA, "Accept": "application/json"}
 
@@ -210,13 +258,18 @@ def fetch_ticker() -> dict:
 
 
 def fetch_klines_hourly(full_init: bool) -> list:
-    """Klines 1h incrémentales. Cache local : on ne refetch que les nouvelles."""
+    """Klines 1h incrémentales.
+
+    Cache local : on retélécharge à chaque run les 2 dernières bougies
+    connues (la dernière a été enregistrée en cours d'heure, donc tronquée)
+    puis les nouvelles ; le cache est écrasé par heure d'ouverture.
+    """
     cache_path = os.path.join(CACHE, "klines_1h.json")
     cached = read_json(cache_path, [])
     candles = [c for c in cached if isinstance(c, list) and len(c) >= 12]
     start_ms = None
     if candles and not full_init:
-        start_ms = int(candles[-1][0]) + 1
+        start_ms = int(candles[-min(2, len(candles))][0])
     else:
         # fenêtre initiale : KLINE_KEEP_DAYS
         start_ms = int((time.time() - KLINE_KEEP_DAYS * 86400) * 1000)
@@ -226,14 +279,12 @@ def fetch_klines_hourly(full_init: bool) -> list:
         d = http_json(url, params=f"symbol={SYMBOL}&interval=1h&limit=1000&startTime={start_ms}")
         if not d:
             break
-        if candles and d and int(d[0][0]) <= int(candles[-1][0]):
-            d = [k for k in d if int(k[0]) > int(candles[-1][0])]
-        candles.extend(d)
+        candles.extend(d)  # après les anciennes : la version fraîche gagne
         if len(d) < 1000:
             break
         start_ms = int(d[-1][0]) + 1
         time.sleep(0.15)
-    # dédoublonne + coupe sur la fenêtre glissante
+    # dédoublonne (dernière version gagne) + coupe sur la fenêtre glissante
     seen = {}
     for c in candles:
         seen[int(c[0])] = c
@@ -425,6 +476,123 @@ def fetch_mining() -> dict:
     return out
 
 
+def _yahoo_quote(sym: str) -> dict:
+    """Un symbole via Yahoo chart API (sans clé) : cours live ou premarket."""
+    last_err = None
+    for host in ("query1", "query2"):
+        try:
+            encoded = urllib.parse.quote(sym, safe="")
+            url = (
+                f"https://{host}.finance.yahoo.com/v8/finance/chart/{encoded}"
+                "?interval=5m&range=1d"
+            )
+            req = urllib.request.Request(url, headers=UA_HEADERS)
+            with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
+                d = json.loads(resp.read().decode("utf-8"))
+            meta = d["chart"]["result"][0]["meta"]
+            last = meta.get("regularMarketPrice")
+            prev = meta.get("chartPreviousClose") or meta.get("previousClose")
+            if last is None or not prev:
+                raise ValueError(f"prix indisponible pour {sym}")
+            quote_ms = meta.get("regularMarketTime")
+            age_min = (time.time() - int(quote_ms)) / 60.0 if quote_ms else None
+            live = age_min is not None and age_min < US_LIVE_MAX_AGE_MIN
+            q = {
+                "symbol": sym,
+                "name": meta.get("shortName") or sym,
+                "price": r6(float(last), 2),
+                "prev_close": r6(float(prev), 2),
+                "chg_pct": pct(float(last), float(prev)),
+                "quote_time": (
+                    iso(dt.datetime.fromtimestamp(int(quote_ms), tz=PARIS)) if quote_ms else None
+                ),
+                "live": live,  # cotation de moins de 20 min
+                "source": "yahoo",
+            }
+            if not live:
+                q["stale_reason"] = (
+                    "quote_time absent" if age_min is None
+                    else f"cotation vieille de {age_min:.0f} min (> {US_LIVE_MAX_AGE_MIN} min) : marché fermé ou hors séance"
+                )
+            return q
+        except Exception as e:
+            last_err = e
+    raise RuntimeError(f"yahoo indisponible pour {sym} : {last_err}")
+
+
+def _stooq_quote(sym: str) -> dict:
+    """Secours Stooq : historique quotidien CSV, clôtures de séance seulement."""
+    url = f"https://stooq.com/q/d/l/?s={sym}&i=d"
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
+        lines = [ln for ln in resp.read().decode("utf-8").splitlines() if ln.strip()]
+    if len(lines) < 3:
+        raise ValueError(f"historique stooq vide pour {sym}")
+    closes = []
+    for ln in lines[1:]:  # Date,Open,High,Low,Close,Volume
+        parts = ln.split(",")
+        if len(parts) >= 5 and parts[4]:
+            try:
+                closes.append(float(parts[4]))
+            except ValueError:
+                continue
+    if len(closes) < 2:
+        raise ValueError(f"clotures insuffisantes pour {sym}")
+    last, prev = closes[-1], closes[-2]
+    return {
+        "symbol": sym,
+        "name": sym,
+        "price": r6(last, 2),
+        "prev_close": r6(prev, 2),
+        "chg_pct": pct(last, prev),
+        "quote_time": None,
+        "live": False,  # clôture de séance, pas du live
+        "stale_reason": "secours stooq : clôture de séance, pas de cotation live",
+        "source": "stooq",
+    }
+
+
+def fetch_us_market() -> dict:
+    """Bloc "us" du market.json : futures ES/NQ + panier top 10 NDX + META,
+    MSTR, SMH (contexte d'ouverture US).
+
+    Une panne d'un symbole ne bloque pas les autres ; si tous échouent,
+    lève une exception pour que le run marque "us" indisponible sans casser
+    le reste du snapshot. Valeurs brutes uniquement : le jugement (biais
+    d'ouverture, lecture) reste produit côté briefing Vibe.
+    """
+    quotes = {}
+    sources = []
+    unavailable = []
+    for key, sym in US_SYMBOLS.items():
+        try:
+            quotes[key] = _yahoo_quote(sym)
+            sources.append("yahoo")
+            continue
+        except Exception as e:
+            log.info("us: yahoo en echec pour %s (%s), essai stooq", sym, e)
+        try:
+            quotes[key] = _stooq_quote(US_STOOQ[key])
+            sources.append("stooq")
+        except Exception as e:
+            log.info("us: stooq aussi en echec pour %s (%s)", sym, e)
+            quotes[key] = None
+            unavailable.append(key)
+    if all(q is None for q in quotes.values()):
+        raise RuntimeError("aucune source US disponible (yahoo + stooq)")
+    if sources and all(s == "yahoo" for s in sources):
+        src = "yahoo"
+    elif sources and all(s == "stooq" for s in sources):
+        src = "stooq"
+    else:
+        src = "mix"
+    out = {"as_of": iso(now_paris()), "source": src}
+    for key in US_SYMBOLS:
+        out[key] = quotes.get(key)
+    out["unavailable"] = unavailable
+    return out
+
+
 # ---------------------------------------------------------------------------
 # Agrégations
 # ---------------------------------------------------------------------------
@@ -543,7 +711,6 @@ def write_daily_rows(oi_state: dict, fund_hist: list, fg_hist: dict, dom_hist: d
     days = load_hourly_csv()
     done = {r[0] for r in csv_tail(DAILY_CSV, n=10**9)}
     today = now_paris().date()
-    y = today - dt.timedelta(days=1)
     # comble au besoin les 3 derniers jours (ex. Mac éteint)
     for i in range(1, 4):
         d = today - dt.timedelta(days=i)
@@ -575,7 +742,7 @@ def write_daily_rows(oi_state: dict, fund_hist: list, fg_hist: dict, dom_hist: d
         dom_day = [k for k in sorted(dom_hist) if day_start_ms <= k < day_end_ms]
         dom_close = dom_hist[dom_day[-1]] if dom_day else None
         vols = [r["vol_usdt"] for r in days.get(dstr, [])]
-        prev_days = [str(y - dt.timedelta(days=j)) for j in range(1, RVOL_DAY_N + 1)]
+        prev_days = [str(d - dt.timedelta(days=j)) for j in range(1, RVOL_DAY_N + 1)]
         prev_vols = [sum(r["vol_usdt"] for r in days.get(p, [])) for p in prev_days]
         prev_vols = [v for v in prev_vols if v]
         rvol_day = pct(sum(vols), mean(prev_vols)) if prev_vols else None
@@ -611,7 +778,7 @@ def write_daily_rows(oi_state: dict, fund_hist: list, fg_hist: dict, dom_hist: d
 
 
 def build_market_json(errors: list, ticker, candles, oi_state, fund_hist,
-                       premium, ls_hist, hl, fg_hist, dom_hist, mining) -> dict:
+                       premium, ls_hist, hl, fg_hist, dom_hist, mining, us=None) -> dict:
     now_p = now_paris()
     now_ms = int(time.time() * 1000)
     idx = parse_candles(candles)
@@ -669,18 +836,19 @@ def build_market_json(errors: list, ticker, candles, oi_state, fund_hist,
     return {
         "meta": {
             "snapshot_at": iso(now_p),
-            "version": "vibe-market/1.0",
+            "version": "vibe-market/1.1",
             "collector": "mac-launchd, 10 min",
             "errors": errors,
             "conventions": {
                 "prix": "BTCUSDT (Binance USDT-M), USD arrondis",
-                "rvol_hour": "_vol de la bougie horaire / moyenne des 20 dernières bougies à la même heure de Paris, en % (100 = normal)",
+                "rvol_hour": "écart en % du volume de la bougie horaire vs la moyenne des 20 dernières bougies à la même heure de Paris (0 = normal, +100 = double, -50 = moitié)",
                 "rvol_hour_current": "proratisé sur la fraction écoulée de l'heure en cours",
                 "delta_btc": "2 x taker buy base - volume : flux agressif net acheteur en BTC (positif = achats dominants)",
                 "oi": "open interest Binance en BTC",
                 "funding": "Binance = taux par période de 8 h en % ; Hyperliquid = taux horaire en % (annualisé = x 24 x 365)",
                 "ls": "ratios long/short Binance : top_pos = positions des top traders, top_acc = comptes des top traders, glob_acc = tous les comptes",
                 "fg": "Fear & Greed alternative.me (0-100)",
+                "us": "futures ES/NQ (CME, Yahoo ES=F/NQ=F) et panier actions US (top 10 du Nasdaq-100 au dépôt T2-2026 + META, MSTR proxy BTC, SMH semi-conducteurs) : live=true si quote_time a moins de 20 min (yahoo), sinon live=false avec stale_reason (cotation ancienne, ou clôture de séance stooq) ; chg_pct = variation vs clôture de la session précédente ; le jugement (biais d'ouverture US, breadth du panier) est produit côté briefing, jamais par le collecteur",
                 "timezone": "Europe/Paris",
             },
         },
@@ -729,6 +897,7 @@ def build_market_json(errors: list, ticker, candles, oi_state, fund_hist,
         }
         if mining
         else None,
+        "us": us,
     }
 
 
@@ -741,18 +910,37 @@ def git_push(no_git: bool) -> None:
     if no_git or not os.path.isdir(os.path.join(ROOT, ".git")):
         return
     stamp = now_paris().strftime("%Y-%m-%d %H:%M")
-    for args in (
-        ["git", "add", "-A", "data"],
-        ["git", "commit", "--quiet", "-m", f"collecte {stamp}"],
-        ["git", "push", "--quiet"],
-    ):
-        try:
-            subprocess.run(
-                args, cwd=ROOT, check=True, capture_output=True, timeout=120,
-            )
-        except Exception as e:  # offline, rien à committer, etc.
-            log.info("git %s ignoré : %s", args[1], e)
+
+    def run(args):
+        return subprocess.run(args, cwd=ROOT, capture_output=True, text=True, timeout=120)
+
+    def git_err(p):
+        return (p.stderr or p.stdout or "").strip().replace("\n", " | ")[:500]
+
+    try:
+        p = run(["git", "add", "-A", "data"])
+        if p.returncode != 0:
+            log.warning("git add en échec (code %s) : %s", p.returncode, git_err(p))
             return
+        if run(["git", "diff", "--cached", "--quiet"]).returncode != 0:
+            p = run(["git", "commit", "--quiet", "-m", f"collecte {stamp}"])
+            if p.returncode != 0:
+                log.warning("git commit en échec (code %s) : %s", p.returncode, git_err(p))
+                return
+        else:
+            log.info("git : rien de nouveau à committer")
+        p = run(["git", "pull", "--rebase", "--autostash", "--quiet"])
+        if p.returncode != 0:
+            log.warning("git pull --rebase en échec (code %s) : %s", p.returncode, git_err(p))
+            run(["git", "rebase", "--abort"])  # laisse le dépôt propre pour le run suivant
+            return
+        p = run(["git", "push", "--quiet"])
+        if p.returncode != 0:
+            log.warning("git push en échec (code %s) : %s", p.returncode, git_err(p))
+            return
+    except Exception as e:  # git absent, timeout...
+        log.warning("git en échec : %s", e)
+        return
     log.info("git push ok")
 
 
@@ -804,6 +992,7 @@ def main() -> int:
     fg_hist = guarded("alternative_fg", fetch_fg_hist) or {}
     dom_hist = guarded("coingecko_dom", fetch_dom_hist) or {}
     mining = guarded("mempool_mining", fetch_mining) or {}
+    us = guarded("us_market", fetch_us_market) or None
 
     if candle_idx:
         write_hourly_rows(candles or [], oi_state)
@@ -835,7 +1024,7 @@ def main() -> int:
 
     snapshot = build_market_json(
         errors, ticker, candles or [], oi_state, fund_hist, premium,
-        ls_hist, hl, fg_hist, dom_hist, mining,
+        ls_hist, hl, fg_hist, dom_hist, mining, us,
     )
     write_json(MARKET_JSON, snapshot)
     state_txt = "OK" if not errors else f"{len(errors)} erreur(s)"
