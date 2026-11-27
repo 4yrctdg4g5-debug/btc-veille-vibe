@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshot_at": "2026-11-27T19:09:52+01:00",
+  "snapshot_at": "2026-11-27T19:20:06+01:00",
   "version": "vibe-market/1.1",
   "collector": "mac-launchd, 10 min",
   "errors": [],
@@ -18,19 +18,19 @@
   }
  },
  "price": {
-  "binance": 59866.5,
-  "hyperliquid": 59867.0,
-  "hl_vs_binance_pct": 0.001,
-  "chg_24h_pct": -1.08,
-  "chg_7d_pct": 2.292,
+  "binance": 59874.7,
+  "hyperliquid": 59875.8,
+  "hl_vs_binance_pct": 0.002,
+  "chg_24h_pct": -1.04,
+  "chg_7d_pct": 2.306,
   "hi_24h": 62206.9,
   "lo_24h": 58750.0,
   "premium_index_pct": -0.043
  },
  "volume": {
-  "vol_usdt_24h": 13972996642.0,
-  "rvol_hour_current": 23.476,
-  "vol_usdt_heure_en_cours": 86435280.0,
+  "vol_usdt_24h": 14018372321.0,
+  "rvol_hour_current": 8.687,
+  "vol_usdt_heure_en_cours": 154861111.0,
   "cvd_24h_btc": 550.091,
   "candles_24h": [
    {
@@ -227,10 +227,10 @@
    "4h": 0.185,
    "24h": -0.069
   },
-  "hyperliquid_oi_btc": 35541.0,
+  "hyperliquid_oi_btc": 35555.0,
   "funding_binance_8h_pct": 0.00116,
   "funding_binance_avg_last32h_pct": 0.00514,
-  "funding_hyperliquid_hourly_pct": 0.00061,
+  "funding_hyperliquid_hourly_pct": 0.00065,
   "ls_top_positions": 1.951,
   "ls_top_accounts": 2.9573,
   "ls_global_accounts": 2.4941,
@@ -250,25 +250,25 @@
   "retarget_est_date": "2026-12-12T06:02:34+01:00"
  },
  "us": {
-  "as_of": "2026-11-27T19:09:52+01:00",
+  "as_of": "2026-11-27T19:20:05+01:00",
   "source": "yahoo",
   "es_futures": {
    "symbol": "ES=F",
    "name": "E-Mini S&P 500 Dec 26",
-   "price": 7303.0,
+   "price": 7307.75,
    "prev_close": 7195.75,
-   "chg_pct": 1.49,
-   "quote_time": "2026-11-27T18:59:44+01:00",
+   "chg_pct": 1.556,
+   "quote_time": "2026-11-27T19:09:55+01:00",
    "live": true,
    "source": "yahoo"
   },
   "nq_futures": {
    "symbol": "NQ=F",
    "name": "Nasdaq 100 Dec 26",
-   "price": 26743.25,
+   "price": 26780.25,
    "prev_close": 26100.25,
-   "chg_pct": 2.464,
-   "quote_time": "2026-11-27T18:59:42+01:00",
+   "chg_pct": 2.605,
+   "quote_time": "2026-11-27T19:09:59+01:00",
    "live": true,
    "source": "yahoo"
   },
@@ -309,8 +309,9 @@
    "prev_close": 601.25,
    "chg_pct": 7.601,
    "quote_time": "2026-11-27T19:00:01+01:00",
-   "live": true,
-   "source": "yahoo"
+   "live": false,
+   "source": "yahoo",
+   "stale_reason": "cotation vieille de 20 min (> 20 min) : marché fermé ou hors séance"
   },
   "msft": {
    "symbol": "MSFT",
@@ -319,8 +320,9 @@
    "prev_close": 489.93,
    "chg_pct": 0.596,
    "quote_time": "2026-11-27T19:00:01+01:00",
-   "live": true,
-   "source": "yahoo"
+   "live": false,
+   "source": "yahoo",
+   "stale_reason": "cotation vieille de 20 min (> 20 min) : marché fermé ou hors séance"
   },
   "amd": {
    "symbol": "AMD",
@@ -329,8 +331,9 @@
    "prev_close": 406.03,
    "chg_pct": 4.559,
    "quote_time": "2026-11-27T19:00:01+01:00",
-   "live": true,
-   "source": "yahoo"
+   "live": false,
+   "source": "yahoo",
+   "stale_reason": "cotation vieille de 20 min (> 20 min) : marché fermé ou hors séance"
   },
   "amzn": {
    "symbol": "AMZN",
@@ -339,8 +342,9 @@
    "prev_close": 244.43,
    "chg_pct": 3.964,
    "quote_time": "2026-11-27T19:00:01+01:00",
-   "live": true,
-   "source": "yahoo"
+   "live": false,
+   "source": "yahoo",
+   "stale_reason": "cotation vieille de 20 min (> 20 min) : marché fermé ou hors séance"
   },
   "tsla": {
    "symbol": "TSLA",
@@ -349,8 +353,9 @@
    "prev_close": 380.14,
    "chg_pct": 5.224,
    "quote_time": "2026-11-27T19:00:00+01:00",
-   "live": true,
-   "source": "yahoo"
+   "live": false,
+   "source": "yahoo",
+   "stale_reason": "cotation vieille de 20 min (> 20 min) : marché fermé ou hors séance"
   },
   "intc": {
    "symbol": "INTC",
@@ -359,8 +364,9 @@
    "prev_close": 54.47,
    "chg_pct": 5.379,
    "quote_time": "2026-11-27T19:00:01+01:00",
-   "live": true,
-   "source": "yahoo"
+   "live": false,
+   "source": "yahoo",
+   "stale_reason": "cotation vieille de 20 min (> 20 min) : marché fermé ou hors séance"
   },
   "avgo": {
    "symbol": "AVGO",
@@ -369,8 +375,9 @@
    "prev_close": 300.86,
    "chg_pct": 3.816,
    "quote_time": "2026-11-27T19:00:01+01:00",
-   "live": true,
-   "source": "yahoo"
+   "live": false,
+   "source": "yahoo",
+   "stale_reason": "cotation vieille de 20 min (> 20 min) : marché fermé ou hors séance"
   },
   "meta": {
    "symbol": "META",
@@ -379,8 +386,9 @@
    "prev_close": 609.89,
    "chg_pct": 3.127,
    "quote_time": "2026-11-27T19:00:01+01:00",
-   "live": true,
-   "source": "yahoo"
+   "live": false,
+   "source": "yahoo",
+   "stale_reason": "cotation vieille de 20 min (> 20 min) : marché fermé ou hors séance"
   },
   "mstr": {
    "symbol": "MSTR",
@@ -389,8 +397,9 @@
    "prev_close": 79.96,
    "chg_pct": 2.076,
    "quote_time": "2026-11-27T19:00:01+01:00",
-   "live": true,
-   "source": "yahoo"
+   "live": false,
+   "source": "yahoo",
+   "stale_reason": "cotation vieille de 20 min (> 20 min) : marché fermé ou hors séance"
   },
   "smh": {
    "symbol": "SMH",
@@ -399,8 +408,9 @@
    "prev_close": 422.46,
    "chg_pct": 4.166,
    "quote_time": "2026-11-27T19:00:00+01:00",
-   "live": true,
-   "source": "yahoo"
+   "live": false,
+   "source": "yahoo",
+   "stale_reason": "cotation vieille de 20 min (> 20 min) : marché fermé ou hors séance"
   },
   "unavailable": []
  }
