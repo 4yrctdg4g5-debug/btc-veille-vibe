@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshot_at": "2026-11-27T01:04:10+01:00",
+  "snapshot_at": "2026-11-27T01:14:15+01:00",
   "version": "vibe-market/1.1",
   "collector": "mac-launchd, 10 min",
   "errors": [],
@@ -18,18 +18,18 @@
   }
  },
  "price": {
-  "binance": 60634.0,
-  "hyperliquid": 60632.0,
+  "binance": 60530.9,
+  "hyperliquid": 60529.0,
   "hl_vs_binance_pct": -0.003,
-  "chg_24h_pct": 0.4,
-  "chg_7d_pct": -1.48,
+  "chg_24h_pct": -0.58,
+  "chg_7d_pct": -1.647,
   "hi_24h": 61603.3,
   "lo_24h": 59877.6,
-  "premium_index_pct": -0.047
+  "premium_index_pct": -0.042
  },
  "volume": {
-  "vol_usdt_24h": 8137423919.0,
-  "rvol_hour_current": -11.238,
+  "vol_usdt_24h": 8022456939.0,
+  "rvol_hour_current": -62.637,
   "vol_usdt_heure_en_cours": 28111037.0,
   "cvd_24h_btc": -190.299,
   "candles_24h": [
@@ -227,10 +227,10 @@
    "4h": -0.138,
    "24h": 1.336
   },
-  "hyperliquid_oi_btc": 34536.0,
+  "hyperliquid_oi_btc": 34529.0,
   "funding_binance_8h_pct": 0.00986,
   "funding_binance_avg_last32h_pct": 0.0077,
-  "funding_hyperliquid_hourly_pct": 0.00081,
+  "funding_hyperliquid_hourly_pct": 0.00057,
   "ls_top_positions": 1.951,
   "ls_top_accounts": 2.9573,
   "ls_global_accounts": 2.4941,
@@ -250,25 +250,25 @@
   "retarget_est_date": "2026-11-27T05:32:56+01:00"
  },
  "us": {
-  "as_of": "2026-11-27T01:04:10+01:00",
+  "as_of": "2026-11-27T01:14:15+01:00",
   "source": "yahoo",
   "es_futures": {
    "symbol": "ES=F",
    "name": "E-Mini S&P 500 Dec 26",
-   "price": 7240.5,
+   "price": 7254.0,
    "prev_close": 7195.75,
-   "chg_pct": 0.622,
-   "quote_time": "2026-11-27T00:54:08+01:00",
+   "chg_pct": 0.81,
+   "quote_time": "2026-11-27T01:04:11+01:00",
    "live": true,
    "source": "yahoo"
   },
   "nq_futures": {
    "symbol": "NQ=F",
    "name": "Nasdaq 100 Dec 26",
-   "price": 26227.75,
+   "price": 26300.5,
    "prev_close": 26100.25,
-   "chg_pct": 0.489,
-   "quote_time": "2026-11-27T00:54:06+01:00",
+   "chg_pct": 0.767,
+   "quote_time": "2026-11-27T01:04:13+01:00",
    "live": true,
    "source": "yahoo"
   },
