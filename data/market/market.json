@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshot_at": "2026-11-27T15:35:01+01:00",
+  "snapshot_at": "2026-11-27T15:36:44+01:00",
   "version": "vibe-market/1.1",
   "collector": "mac-launchd, 10 min",
   "errors": [],
@@ -18,196 +18,196 @@
   }
  },
  "price": {
-  "binance": 60669.6,
-  "hyperliquid": 60678.0,
-  "hl_vs_binance_pct": 0.014,
-  "chg_24h_pct": -0.4,
-  "chg_7d_pct": 2.06,
+  "binance": 60692.5,
+  "hyperliquid": 60664.0,
+  "hl_vs_binance_pct": -0.047,
+  "chg_24h_pct": -0.22,
+  "chg_7d_pct": 2.098,
   "hi_24h": 62206.9,
   "lo_24h": 59877.6,
-  "premium_index_pct": -0.063
+  "premium_index_pct": 0.001
  },
  "volume": {
-  "vol_usdt_24h": 9472637704.0,
-  "rvol_hour_current": 17.695,
-  "vol_usdt_heure_en_cours": 572375697.0,
-  "cvd_24h_btc": 474.314,
+  "vol_usdt_24h": 9614864633.0,
+  "rvol_hour_current": -5.55,
+  "vol_usdt_heure_en_cours": 701392523.0,
+  "cvd_24h_btc": 3512.01,
   "candles_24h": [
    {
     "t": "2026-11-26T16:00:00+01:00",
-    "close": 60342.2,
-    "vol_usdt": 237113066.0,
-    "vol_ratio_btc": 3929.5,
-    "delta_btc": -532.893,
-    "rvol_hour": -79.677
+    "close": 60600.0,
+    "vol_usdt": 1013359776.0,
+    "vol_ratio_btc": 16722.1,
+    "delta_btc": -32.536,
+    "rvol_hour": -25.649
    },
    {
     "t": "2026-11-26T17:00:00+01:00",
-    "close": 60715.6,
-    "vol_usdt": 91887382.0,
-    "vol_ratio_btc": 1513.4,
-    "delta_btc": 179.533,
-    "rvol_hour": -87.484
+    "close": 60502.0,
+    "vol_usdt": 392166402.0,
+    "vol_ratio_btc": 6481.9,
+    "delta_btc": 104.497,
+    "rvol_hour": -56.598
    },
    {
     "t": "2026-11-26T18:00:00+01:00",
-    "close": 60593.8,
-    "vol_usdt": 32454636.0,
-    "vol_ratio_btc": 535.6,
-    "delta_btc": 26.701,
-    "rvol_hour": -93.566
+    "close": 60515.3,
+    "vol_usdt": 237026016.0,
+    "vol_ratio_btc": 3916.8,
+    "delta_btc": 153.651,
+    "rvol_hour": -66.344
    },
    {
     "t": "2026-11-26T19:00:00+01:00",
-    "close": 60536.0,
-    "vol_usdt": 21718993.0,
-    "vol_ratio_btc": 358.8,
-    "delta_btc": 58.653,
-    "rvol_hour": -93.524
+    "close": 60460.0,
+    "vol_usdt": 269401632.0,
+    "vol_ratio_btc": 4455.9,
+    "delta_btc": 71.943,
+    "rvol_hour": -35.98
    },
    {
     "t": "2026-11-26T20:00:00+01:00",
-    "close": 60490.7,
-    "vol_usdt": 22423349.0,
-    "vol_ratio_btc": 370.7,
-    "delta_btc": 51.534,
-    "rvol_hour": -93.204
+    "close": 60697.1,
+    "vol_usdt": 142195856.0,
+    "vol_ratio_btc": 2342.7,
+    "delta_btc": 395.348,
+    "rvol_hour": -65.35
    },
    {
     "t": "2026-11-26T21:00:00+01:00",
-    "close": 60667.9,
-    "vol_usdt": 3624913.0,
-    "vol_ratio_btc": 59.8,
-    "delta_btc": -17.323,
-    "rvol_hour": -98.921
+    "close": 60739.0,
+    "vol_usdt": 103715075.0,
+    "vol_ratio_btc": 1707.6,
+    "delta_btc": 146.796,
+    "rvol_hour": -74.49
    },
    {
     "t": "2026-11-26T22:00:00+01:00",
-    "close": 60768.9,
-    "vol_usdt": 5580265.0,
-    "vol_ratio_btc": 91.8,
-    "delta_btc": 56.837,
-    "rvol_hour": -98.771
+    "close": 60791.9,
+    "vol_usdt": 160363025.0,
+    "vol_ratio_btc": 2637.9,
+    "delta_btc": 210.401,
+    "rvol_hour": -68.248
    },
    {
     "t": "2026-11-26T23:00:00+01:00",
-    "close": 60732.1,
-    "vol_usdt": 15457944.0,
-    "vol_ratio_btc": 254.5,
-    "delta_btc": -71.002,
-    "rvol_hour": -96.068
+    "close": 60523.5,
+    "vol_usdt": 227988968.0,
+    "vol_ratio_btc": 3766.9,
+    "delta_btc": 7.51,
+    "rvol_hour": -46.512
    },
    {
     "t": "2026-11-27T00:00:00+01:00",
-    "close": 60454.2,
-    "vol_usdt": 22789690.0,
-    "vol_ratio_btc": 377.0,
-    "delta_btc": -27.216,
-    "rvol_hour": -94.414
+    "close": 60544.2,
+    "vol_usdt": 191099826.0,
+    "vol_ratio_btc": 3156.4,
+    "delta_btc": -6.951,
+    "rvol_hour": -59.277
    },
    {
     "t": "2026-11-27T01:00:00+01:00",
-    "close": 60631.5,
-    "vol_usdt": 28111037.0,
-    "vol_ratio_btc": 463.6,
-    "delta_btc": 151.574,
-    "rvol_hour": -91.124
+    "close": 60666.9,
+    "vol_usdt": 244324708.0,
+    "vol_ratio_btc": 4027.3,
+    "delta_btc": -38.952,
+    "rvol_hour": -42.45
    },
    {
     "t": "2026-11-27T02:00:00+01:00",
-    "close": 60734.0,
-    "vol_usdt": 29627435.0,
-    "vol_ratio_btc": 487.8,
-    "delta_btc": 24.002,
-    "rvol_hour": -92.993
+    "close": 60710.0,
+    "vol_usdt": 201553128.0,
+    "vol_ratio_btc": 3319.9,
+    "delta_btc": 124.589,
+    "rvol_hour": -61.354
    },
    {
     "t": "2026-11-27T03:00:00+01:00",
-    "close": 60780.7,
-    "vol_usdt": 77819427.0,
-    "vol_ratio_btc": 1280.3,
-    "delta_btc": 306.358,
-    "rvol_hour": -85.612
+    "close": 61293.9,
+    "vol_usdt": 1269357101.0,
+    "vol_ratio_btc": 20709.4,
+    "delta_btc": 2629.223,
+    "rvol_hour": 88.45
    },
    {
     "t": "2026-11-27T04:00:00+01:00",
-    "close": 61456.0,
-    "vol_usdt": 67690642.0,
-    "vol_ratio_btc": 1101.4,
-    "delta_btc": 264.706,
-    "rvol_hour": -88.908
+    "close": 61392.8,
+    "vol_usdt": 428026314.0,
+    "vol_ratio_btc": 6971.9,
+    "delta_btc": 309.889,
+    "rvol_hour": -44.992
    },
    {
     "t": "2026-11-27T05:00:00+01:00",
-    "close": 61350.0,
-    "vol_usdt": 25507945.0,
-    "vol_ratio_btc": 415.8,
-    "delta_btc": -40.077,
-    "rvol_hour": -93.954
+    "close": 61391.7,
+    "vol_usdt": 209303136.0,
+    "vol_ratio_btc": 3409.3,
+    "delta_btc": -196.688,
+    "rvol_hour": -57.834
    },
    {
     "t": "2026-11-27T06:00:00+01:00",
-    "close": 61687.5,
-    "vol_usdt": 59819369.0,
-    "vol_ratio_btc": 969.7,
-    "delta_btc": 302.871,
-    "rvol_hour": -84.198
+    "close": 61751.8,
+    "vol_usdt": 497712105.0,
+    "vol_ratio_btc": 8059.9,
+    "delta_btc": 579.304,
+    "rvol_hour": 13.061
    },
    {
     "t": "2026-11-27T07:00:00+01:00",
-    "close": 61730.1,
-    "vol_usdt": 36096163.0,
-    "vol_ratio_btc": 584.7,
-    "delta_btc": -64.358,
-    "rvol_hour": -91.705
+    "close": 61680.9,
+    "vol_usdt": 394487103.0,
+    "vol_ratio_btc": 6395.6,
+    "delta_btc": -653.025,
+    "rvol_hour": -21.795
    },
    {
     "t": "2026-11-27T08:00:00+01:00",
-    "close": 61741.6,
-    "vol_usdt": 27441007.0,
-    "vol_ratio_btc": 444.4,
-    "delta_btc": 18.484,
-    "rvol_hour": -92.713
+    "close": 61630.0,
+    "vol_usdt": 533932070.0,
+    "vol_ratio_btc": 8663.5,
+    "delta_btc": -21.055,
+    "rvol_hour": 17.582
    },
    {
     "t": "2026-11-27T09:00:00+01:00",
-    "close": 61876.0,
-    "vol_usdt": 101383395.0,
-    "vol_ratio_btc": 1638.5,
-    "delta_btc": 260.473,
-    "rvol_hour": -74.237
+    "close": 61693.4,
+    "vol_usdt": 755179598.0,
+    "vol_ratio_btc": 12240.8,
+    "delta_btc": 951.91,
+    "rvol_hour": 53.181
    },
    {
     "t": "2026-11-27T10:00:00+01:00",
-    "close": 61796.3,
-    "vol_usdt": 50265119.0,
-    "vol_ratio_btc": 813.4,
-    "delta_btc": 33.353,
-    "rvol_hour": -87.448
+    "close": 61592.6,
+    "vol_usdt": 326126461.0,
+    "vol_ratio_btc": 5294.9,
+    "delta_btc": -406.225,
+    "rvol_hour": -31.314
    },
    {
     "t": "2026-11-27T11:00:00+01:00",
-    "close": 61611.0,
-    "vol_usdt": 2181328.0,
-    "vol_ratio_btc": 35.4,
-    "delta_btc": 12.483,
-    "rvol_hour": -99.204
+    "close": 61634.1,
+    "vol_usdt": 192568428.0,
+    "vol_ratio_btc": 3124.4,
+    "delta_btc": 34.486,
+    "rvol_hour": -42.242
    },
    {
     "t": "2026-11-27T12:00:00+01:00",
-    "close": 61550.0,
-    "vol_usdt": 13398149.0,
-    "vol_ratio_btc": 217.7,
-    "delta_btc": -45.935,
-    "rvol_hour": -95.462
+    "close": 61629.4,
+    "vol_usdt": 355399040.0,
+    "vol_ratio_btc": 5766.7,
+    "delta_btc": -186.297,
+    "rvol_hour": -8.818
    },
    {
     "t": "2026-11-27T13:00:00+01:00",
-    "close": 61616.4,
-    "vol_usdt": 14533131.0,
-    "vol_ratio_btc": 235.9,
-    "delta_btc": -63.449,
-    "rvol_hour": -96.34
+    "close": 61607.6,
+    "vol_usdt": 229955935.0,
+    "vol_ratio_btc": 3732.6,
+    "delta_btc": -175.694,
+    "rvol_hour": -50.568
    },
    {
     "t": "2026-11-27T14:00:00+01:00",
@@ -215,7 +215,7 @@
     "vol_usdt": 410121066.0,
     "vol_ratio_btc": 6675.8,
     "delta_btc": -353.242,
-    "rvol_hour": -32.515
+    "rvol_hour": -51.546
    }
   ]
  },
@@ -227,7 +227,7 @@
    "4h": -0.133,
    "24h": 0.92
   },
-  "hyperliquid_oi_btc": 38878.0,
+  "hyperliquid_oi_btc": 38759.0,
   "funding_binance_8h_pct": 0.00503,
   "funding_binance_avg_last32h_pct": 0.00697,
   "funding_hyperliquid_hourly_pct": 0.00125,
@@ -250,7 +250,7 @@
   "retarget_est_date": "2026-12-12T06:02:34+01:00"
  },
  "us": {
-  "as_of": "2026-11-27T15:35:00+01:00",
+  "as_of": "2026-11-27T15:36:43+01:00",
   "source": "yahoo",
   "es_futures": {
    "symbol": "ES=F",
@@ -258,147 +258,147 @@
    "price": 7288.75,
    "prev_close": 7195.75,
    "chg_pct": 1.292,
-   "quote_time": "2026-11-27T15:24:51+01:00",
+   "quote_time": "2026-11-27T15:26:34+01:00",
    "live": true,
    "source": "yahoo"
   },
   "nq_futures": {
    "symbol": "NQ=F",
    "name": "Nasdaq 100 Dec 26",
-   "price": 26617.0,
+   "price": 26596.5,
    "prev_close": 26100.25,
-   "chg_pct": 1.98,
-   "quote_time": "2026-11-27T15:24:52+01:00",
+   "chg_pct": 1.901,
+   "quote_time": "2026-11-27T15:26:35+01:00",
    "live": true,
    "source": "yahoo"
   },
   "nvda": {
    "symbol": "NVDA",
    "name": "NVIDIA Corporation",
-   "price": 147.71,
+   "price": 147.68,
    "prev_close": 149.3,
-   "chg_pct": -1.065,
-   "quote_time": "2026-11-27T15:34:43+01:00",
+   "chg_pct": -1.085,
+   "quote_time": "2026-11-27T15:36:28+01:00",
    "live": true,
    "source": "yahoo"
   },
   "aapl": {
    "symbol": "AAPL",
    "name": "Apple Inc.",
-   "price": 357.69,
+   "price": 357.37,
    "prev_close": 355.58,
-   "chg_pct": 0.594,
-   "quote_time": "2026-11-27T15:34:54+01:00",
+   "chg_pct": 0.503,
+   "quote_time": "2026-11-27T15:36:36+01:00",
    "live": true,
    "source": "yahoo"
   },
   "googl": {
    "symbol": "GOOGL",
    "name": "Alphabet Inc.",
-   "price": 275.56,
+   "price": 275.19,
    "prev_close": 273.1,
-   "chg_pct": 0.901,
-   "quote_time": "2026-11-27T15:34:54+01:00",
+   "chg_pct": 0.765,
+   "quote_time": "2026-11-27T15:36:37+01:00",
    "live": true,
    "source": "yahoo"
   },
   "mu": {
    "symbol": "MU",
    "name": "Micron Technology, Inc.",
-   "price": 614.89,
+   "price": 619.91,
    "prev_close": 601.25,
-   "chg_pct": 2.269,
-   "quote_time": "2026-11-27T15:34:56+01:00",
+   "chg_pct": 3.104,
+   "quote_time": "2026-11-27T15:36:38+01:00",
    "live": true,
    "source": "yahoo"
   },
   "msft": {
    "symbol": "MSFT",
    "name": "Microsoft Corporation",
-   "price": 497.89,
+   "price": 495.95,
    "prev_close": 489.93,
-   "chg_pct": 1.625,
-   "quote_time": "2026-11-27T15:34:55+01:00",
+   "chg_pct": 1.23,
+   "quote_time": "2026-11-27T15:36:38+01:00",
    "live": true,
    "source": "yahoo"
   },
   "amd": {
    "symbol": "AMD",
    "name": "Advanced Micro Devices, Inc.",
-   "price": 410.57,
+   "price": 412.29,
    "prev_close": 406.03,
-   "chg_pct": 1.118,
-   "quote_time": "2026-11-27T15:34:55+01:00",
+   "chg_pct": 1.542,
+   "quote_time": "2026-11-27T15:36:40+01:00",
    "live": true,
    "source": "yahoo"
   },
   "amzn": {
    "symbol": "AMZN",
    "name": "Amazon.com, Inc.",
-   "price": 248.63,
+   "price": 249.52,
    "prev_close": 244.43,
-   "chg_pct": 1.718,
-   "quote_time": "2026-11-27T15:34:54+01:00",
+   "chg_pct": 2.082,
+   "quote_time": "2026-11-27T15:36:30+01:00",
    "live": true,
    "source": "yahoo"
   },
   "tsla": {
    "symbol": "TSLA",
    "name": "Tesla, Inc.",
-   "price": 387.13,
+   "price": 386.25,
    "prev_close": 380.14,
-   "chg_pct": 1.84,
-   "quote_time": "2026-11-27T15:34:57+01:00",
+   "chg_pct": 1.609,
+   "quote_time": "2026-11-27T15:36:37+01:00",
    "live": true,
    "source": "yahoo"
   },
   "intc": {
    "symbol": "INTC",
    "name": "Intel Corporation",
-   "price": 55.63,
+   "price": 55.96,
    "prev_close": 54.47,
-   "chg_pct": 2.13,
-   "quote_time": "2026-11-27T15:34:57+01:00",
+   "chg_pct": 2.735,
+   "quote_time": "2026-11-27T15:36:40+01:00",
    "live": true,
    "source": "yahoo"
   },
   "avgo": {
    "symbol": "AVGO",
    "name": "Broadcom Inc.",
-   "price": 306.62,
+   "price": 307.8,
    "prev_close": 300.86,
-   "chg_pct": 1.913,
-   "quote_time": "2026-11-27T15:34:58+01:00",
+   "chg_pct": 2.307,
+   "quote_time": "2026-11-27T15:36:36+01:00",
    "live": true,
    "source": "yahoo"
   },
   "meta": {
    "symbol": "META",
    "name": "Meta Platforms, Inc.",
-   "price": 625.15,
+   "price": 623.51,
    "prev_close": 609.89,
-   "chg_pct": 2.502,
-   "quote_time": "2026-11-27T15:34:58+01:00",
+   "chg_pct": 2.233,
+   "quote_time": "2026-11-27T15:36:41+01:00",
    "live": true,
    "source": "yahoo"
   },
   "mstr": {
    "symbol": "MSTR",
    "name": "Strategy Inc",
-   "price": 80.65,
+   "price": 80.24,
    "prev_close": 79.96,
-   "chg_pct": 0.863,
-   "quote_time": "2026-11-27T15:34:59+01:00",
+   "chg_pct": 0.35,
+   "quote_time": "2026-11-27T15:36:41+01:00",
    "live": true,
    "source": "yahoo"
   },
   "smh": {
    "symbol": "SMH",
    "name": "VanEck Semiconductor ETF",
-   "price": 427.44,
+   "price": 428.45,
    "prev_close": 422.46,
-   "chg_pct": 1.178,
-   "quote_time": "2026-11-27T15:35:00+01:00",
+   "chg_pct": 1.418,
+   "quote_time": "2026-11-27T15:36:42+01:00",
    "live": true,
    "source": "yahoo"
   },
